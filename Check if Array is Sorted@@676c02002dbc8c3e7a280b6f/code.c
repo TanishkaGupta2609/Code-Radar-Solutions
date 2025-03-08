@@ -9,14 +9,14 @@ int main()
     }
     for(int i=0;i<n;i++){
         for(int j=0;j<n-i-1;j++){
-            if(arr[j+1]>arr[j]){
+        }
+    }
+    if(arr[j+1]>arr[j]){
     printf("Sorted");
             }
             else{
     printf("Not Sorted");
             }
-        }
-    }
    return 0;
     
 
