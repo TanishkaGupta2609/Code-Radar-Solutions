@@ -4,10 +4,10 @@ int main()
     int n;
     scanf("%d",&n);
     int arr[n];
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         scanf("%d",&n);
     }
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         for(int j=0;j<n-i-1;j++){
             if(arr[j]>arr[j+1]){
                 temp=arr[j];
