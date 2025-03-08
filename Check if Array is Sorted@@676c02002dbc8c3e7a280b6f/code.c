@@ -10,14 +10,14 @@ int main()
     for(int i=0;i<n;i++){
         for(int j=0;j<n-i-1;j++){
             if(arr[j+1]>arr[j]){
-                int temp=1;
+                int tem=1;
             }
             else{
-                int temp=0;
+                int tem=0;
             }
         }
     }
-    if (int temp=1){
+    if (int tem=1){
         printf("Sorted");
     }
     else{
