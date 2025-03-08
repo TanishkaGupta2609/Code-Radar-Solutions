@@ -12,6 +12,7 @@ int main()
         for(int j=0;j<n-i-1;j++){
             if (arr[j+1]>arr[j]){
                 sorted =0;
+                break;
             }
         }
     }
