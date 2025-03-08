@@ -17,7 +17,7 @@ int main()
             }
         }
     }
-    if (temp=1){
+    if (int temp=1){
         printf("Sorted");
     }
     else{
