@@ -14,7 +14,7 @@ int main()
                 break;
             }
         }
-    if (sorted){
+    if (sorted==1){
         printf("Sorted");
     }
     else{
