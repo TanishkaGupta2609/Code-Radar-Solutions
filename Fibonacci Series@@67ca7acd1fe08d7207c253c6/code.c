@@ -12,5 +12,5 @@ int fibonacciSeries(int n)
     return fib_n;
 }
 for(int i=0;i<n;i++){
-    printf("%d",fib_n)
+    printf("%d",fib_n);
 }
