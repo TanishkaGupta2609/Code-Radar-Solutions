@@ -1,12 +1,13 @@
 #include <stdio.h>
 int mainarray(int arr[],int n)
 {
+    int count=0;count_1=0
     for(int i=0;i<n;i++){
         if(i%2==0){
-            int count+=1;
+             count+=1;
         }
         else{
-            int count_1+=1;
+             count_1+=1;
         }
     }
 }
