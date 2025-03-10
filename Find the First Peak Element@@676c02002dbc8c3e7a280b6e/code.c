@@ -13,6 +13,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    mainarray(arr,n);
+    mainrray(arr,n);
     return 0;
 }
