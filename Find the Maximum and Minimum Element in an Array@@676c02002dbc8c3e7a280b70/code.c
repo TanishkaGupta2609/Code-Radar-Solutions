@@ -19,4 +19,5 @@ int main()
         
     }
     printf("%d %d",max_arr,min_arr);
+    return 0;
 }
