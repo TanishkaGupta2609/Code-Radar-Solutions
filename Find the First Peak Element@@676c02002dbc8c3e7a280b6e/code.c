@@ -1,8 +1,8 @@
 #include <stdio.h>
 int mainrray(int arr[],int n){
     for(int i=0;i<n;i++){
-        if(arr[j+1]>arr[j]){
-            printf("%d",arr[j+1]);
+        if(arr[i+1]>arr[i]){
+            printf("%d",arr[i+1]);
         }
     }
 }
