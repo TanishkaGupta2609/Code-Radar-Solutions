@@ -7,7 +7,7 @@ int mainarray(int arr[],int n)
              count++;
         }
         else{
-            count_1+=1;
+            count_1++;
         }
     }
     printf("%d %d",count,count_1);
