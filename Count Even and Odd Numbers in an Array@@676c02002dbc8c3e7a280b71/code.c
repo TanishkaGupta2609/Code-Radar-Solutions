@@ -4,7 +4,7 @@ int mainarray(int arr[],int n)
     int count=0,count_1=0;
     for(int i=0;i<n;i++){
         if(i%2==0){
-             count+=1;
+             count++;
         }
         else{
             count_1+=1;
@@ -20,5 +20,6 @@ int main()
         scanf("%d",&arr[i]);
     }
     mainarray(arr,n);
+    printf("%d",mainarray(arr,n));
     return 0;
 }
