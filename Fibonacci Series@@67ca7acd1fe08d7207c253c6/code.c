@@ -9,6 +9,6 @@ int fibonacciSeries(int n)
     int fib_n1=fibonacciSeries(n-1);
     int fib_n2=fibonacciSeries(n-2);
     int fib_n=fib_n1+fib_n2;
-    printf("%d",fib_n);
+    return fib_n;
 }
-
+printf("%d",fibbonacciSeries(n));
