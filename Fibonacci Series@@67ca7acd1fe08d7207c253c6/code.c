@@ -11,4 +11,6 @@ int fibonacciSeries(int n)
     int fib_n=fib_n1+fib_n2;
     return fib_n;
 }
-printf("%d",fibbonacciSeries(n));
+for(int i=0;i<n;i++){
+    printf("%d",fib_n)
+}
