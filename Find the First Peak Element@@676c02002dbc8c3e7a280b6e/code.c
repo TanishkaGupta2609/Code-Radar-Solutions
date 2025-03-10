@@ -1,7 +1,7 @@
 #include <stdio.h>
 int mainrray(int arr[],int n){
     for(int i=0;i<n;i++){
-        if(arr[j+1]>a[j]){
+        if(arr[j+1]>arr[j]){
             printf("%d",arr[j+1]);
         }
     }
