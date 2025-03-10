@@ -13,10 +13,7 @@ int fibonacciSeries(int n)
 
 
 }
-int main()
-{
 for(int i=0;i<n;i++){
     printf("%d",fibonacciSeries(i));
    }
    printf("\n");
-}
