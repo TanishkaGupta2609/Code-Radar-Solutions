@@ -20,6 +20,6 @@ int main()
         }
         
     }
-    printf("%d %d",max_arr,min_arr);
+    printf("%d %d",min_arr,max_arr);
     return 0;
 }
