@@ -1,7 +1,7 @@
 #include <stdio.h>
 int mainarray(int arr[],int n)
 {
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         if(i%2==0){
             int count+=1;
         }
@@ -13,7 +13,7 @@ int mainarray(int arr[],int n)
 int main()
 {
     scanf("%d",&n);
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
     printf("%d %d",count,count_1);
