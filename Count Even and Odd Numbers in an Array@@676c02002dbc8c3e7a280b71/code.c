@@ -4,10 +4,10 @@ int mainarray(int arr[],int n)
     int count=0,count_1=0;
     for(int i=0;i<n;i++){
         if(i%2==0){
-             count+=1;
+             return count+=1;
         }
         else{
-             count_1+=1;
+            return count_1+=1;
         }
     }
 }
@@ -19,6 +19,7 @@ int main()
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d %d",count,count_1);
+    int s=mainarray(arr[],n);
+    printf("%d",s);
     return 0;
 }
