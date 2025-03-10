@@ -19,7 +19,7 @@ int main()
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int s=mainarray(arr[],n);
+    int s=mainarray(arr[n],n);
     printf("%d",s);
     return 0;
 }
