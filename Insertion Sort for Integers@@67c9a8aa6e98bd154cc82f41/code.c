@@ -1,4 +1,4 @@
-void selectionSort(int arr[],int n){
+void insertionSort(int arr[],int n){
     for(int i=0;i<n;i++){
         for(int j=0;j<n-i-1;j++){
             if (arr[j]>arr[j+1]){
