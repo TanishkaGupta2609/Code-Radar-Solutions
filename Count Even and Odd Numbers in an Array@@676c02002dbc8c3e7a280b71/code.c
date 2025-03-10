@@ -10,6 +10,7 @@ int mainarray(int arr[],int n)
             count_1+=1;
         }
     }
+    printf("%d %d",count,count_1);
 }
 int main()
 {
@@ -20,6 +21,6 @@ int main()
         scanf("%d",&arr[i]);
     }
     mainarray(arr,n);
-    printf("%d",mainarray(arr,n));
+
     return 0;
 }
