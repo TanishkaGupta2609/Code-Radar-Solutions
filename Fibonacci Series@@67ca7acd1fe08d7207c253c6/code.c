@@ -4,7 +4,7 @@ int fibonacciSeries(int n)
         return 0;
     }
     if (n==1){
-        return 1;
+        return 0;
     }
     return fibonacciSeries(n-2)+fibonacciSeries(n-1);
     
