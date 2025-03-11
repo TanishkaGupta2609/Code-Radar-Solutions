@@ -13,6 +13,9 @@ void sortArray(int a[],int n){
 int main(){
     int n;
     scanf("%d",&n);
+    if (n<2){
+        printf("-1");
+    }
     int a[n];
     for(int i=0;i<n;i++){
         scanf("%d",&a[i]);
@@ -20,9 +23,6 @@ int main(){
     sortArray(a,n);
     if (a[1]!=a[2]){
          printf("%d",a[n-2]);   
-    }
-    else if(n<2){
-        printf("-1");
     }
     else{
         printf("-1");
