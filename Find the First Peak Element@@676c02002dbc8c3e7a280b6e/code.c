@@ -4,7 +4,7 @@ int mainrray(int arr[],int n){
          printf("-1");
     }
     if(n==2){
-        if(arr[1]>arr[2]){
+        if(arr[0]>arr[1]){
             printf("%d",arr[1]);
         }
         else{
