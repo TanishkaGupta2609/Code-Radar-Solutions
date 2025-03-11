@@ -18,5 +18,5 @@ int main(){
         scanf("%d",&a[i]);
     }
     sortArray(a,n);
-    printf("%d",a[n-1]);
+    printf("%d",a[n-2]);
 }
