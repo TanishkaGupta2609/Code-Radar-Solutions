@@ -1,5 +1,5 @@
 #include <stdio.h>
-int mainrray(int arr[],int n){
+void mainrray(int arr[],int n){
     for(int i=1;i<=n;i++){
         if(arr[i+1]<arr[i] && arr[i-1]<arr[i]){
             printf("%d",arr[i]);
