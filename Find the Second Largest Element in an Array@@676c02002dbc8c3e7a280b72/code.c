@@ -18,5 +18,12 @@ int main(){
         scanf("%d",&a[i]);
     }
     sortArray(a,n);
-    printf("%d",a[n-2]);   
+    if (a[1]!=a[2]){
+         printf("%d",a[n-2]);   
+    }
+    else{
+        printf("-1");
+    }
+   
+   
 }
