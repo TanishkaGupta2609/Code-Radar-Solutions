@@ -16,6 +16,7 @@ int main(){
     if (n<2){
         printf("-1");
     }
+    return 0;
     int a[n];
     for(int i=0;i<n;i++){
         scanf("%d",&a[i]);
@@ -27,6 +28,6 @@ int main(){
     else{
         printf("-1");
     }
-   
+   return 0;
    
 }
