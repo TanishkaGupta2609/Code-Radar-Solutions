@@ -5,10 +5,10 @@ int mainrray(int arr[],int n){
     }
     if(n==2){
         if(arr[0]>arr[1]){
-            printf("%d",arr[1]);
+            printf("%d",arr[0]);
         }
         else{
-            printf("%d",arr[2]);
+            printf("%d",arr[1]);
         }
     }
     for(int i=1;i<n;i++){
