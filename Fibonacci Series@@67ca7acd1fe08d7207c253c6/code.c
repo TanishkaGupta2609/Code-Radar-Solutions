@@ -5,10 +5,10 @@ int fibonacciSeries(int n)
     int next;
     for(int i=0;i<n;i++){
         if(i==0){
-            printf("%d",a);
+            printf("%d ",a);
         }
         else if(i==1){
-            printf("%d",b);
+            printf("%d ",b);
         }
         else{
             next=a+b;
