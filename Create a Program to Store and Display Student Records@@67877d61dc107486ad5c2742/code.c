@@ -1,6 +1,6 @@
 #include <stdio.h>
 struct students{
-    int roll number;
+    int rollnumber;
     int name[50];
     int marks;
 }
@@ -9,10 +9,10 @@ int main(){
     scanf("%d",&n);
     struct students clas[n];
     for(i=0;i<n;i++){
-        scanf("%d %s %f",&clas.roll number[i],&clas.name[i],&clas.marks[i]);
+        scanf("%d %s %f",&clas.rollnumber[i],&clas.name[i],&clas.marks[i]);
     }
     for(i=0;i<n;i++){
-        printf("Roll Number: %d,Name: %s,Marks: %.2f",clas.roll number[i],clas.name[i],clas.marks[i]);
+        printf("Roll Number: %d,Name: %s,Marks: %.2f",clas.rollnumber[i],clas.name[i],clas.marks[i]);
     }
     return 0;
 }
