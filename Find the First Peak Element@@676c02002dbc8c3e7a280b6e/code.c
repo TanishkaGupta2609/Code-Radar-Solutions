@@ -1,16 +1,12 @@
 #include <stdio.h>
-void mainrray(int arr[],int n){
-    for(int i=1;i<=n;i++){
-        if(arr[i+1]<arr[i] && arr[i-1]<arr[i]){
-            return arr[i];
-            break;
+int mainrray(int arr[],int n){
+    if (n==0 || n==1){
+         printf("-1");
+    }
+    for(i=1;i<n;i++){
+        if(arr[i]>arr[i-1] && arr[i]>arr[i+1]){
+            printf("%d",arr[i]);
         }
-    }
-    if (n==0){
-        return -1;
-    if (n==1 || arr[1]>arr[0]){
-        return arr[1]
-    }
     }
 }
 int main(){
@@ -20,7 +16,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int s=mainrray(arr,n);
-    printf("%d",mainarray(arr,n));
+    mainrray(arr,n);
     return 0;
 }
