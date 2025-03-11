@@ -1,17 +1,21 @@
 int fibonacciSeries(int n)
 {
-    if (n==0){
-        return 0;
+    int a=0;
+    int b=1;
+    int next;
+    for(i=0;i<n;i++){
+        if(i==0){
+            printf("%d",a);
+        }
+        else if(i==1){
+            printf("%d",b);
+        }
+        else{
+            next=a+b;
+            printf("%d",next);
+            a=b;
+            b=next;
+        }
     }
-    if (n==1){
-        return 0;
-    }
-    return fibonacciSeries(n-2)+fibonacciSeries(n-1);
-    
-    
-for(int i=0;i<n;i++){
-    printf("%d",fibonacciSeries(i));
-    }
-
 }
    
