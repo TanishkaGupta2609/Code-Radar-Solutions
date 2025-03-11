@@ -11,9 +11,6 @@ int mainrray(int arr[],int n){
             printf("%d",arr[1]);
         }
     }
-    if(arr[n-1]>arr[n-2]){
-        printf("%d",arr[n-1]);
-    }
     for(int i=1;i<n;i++){
         if(arr[i]>arr[i-1] && arr[i]>arr[i+1]){
             printf("%d",arr[i]);
@@ -21,6 +18,9 @@ int mainrray(int arr[],int n){
         }
     }
 }
+    if(arr[n-1]>arr[n-2]){
+        printf("%d",arr[n-1]);
+    }
 int main(){
     int n;
     scanf("%d",&n);
