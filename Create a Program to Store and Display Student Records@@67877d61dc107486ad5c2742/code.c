@@ -8,7 +8,7 @@ int main(){
     int n;
     scanf("%d",&n);
     struct students clas[n];
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         scanf("%d %s %f",&clas.rollnumber[i],&clas.name[i],&clas.marks[i]);
     }
     for(i=0;i<n;i++){
