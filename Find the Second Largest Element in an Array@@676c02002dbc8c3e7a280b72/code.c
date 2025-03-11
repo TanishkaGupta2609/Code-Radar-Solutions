@@ -17,6 +17,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    sortArray(a,n)
+    sortArray(a,n);
     printf("%d",a[n-1]);
 }
