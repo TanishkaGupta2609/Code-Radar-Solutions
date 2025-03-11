@@ -21,6 +21,9 @@ int main(){
     if (a[1]!=a[2]){
          printf("%d",a[n-2]);   
     }
+    else if(n<2){
+        printf("-1");
+    }
     else{
         printf("-1");
     }
