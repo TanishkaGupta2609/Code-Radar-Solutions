@@ -12,6 +12,6 @@ int main() {
     scanf("%d", &n);
 
     int result = setNthBit(num, n);
-    printf("Result after setting %dth bit: %d\n", n, result);
+    printf("%d\n", n, result);
     return 0;
 }
