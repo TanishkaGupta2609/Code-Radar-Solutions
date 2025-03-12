@@ -6,4 +6,5 @@ int searchInRotatedArray(int arr[],int n,int target){
         }
     }
     printf("-1");
+    return 0;
 }
