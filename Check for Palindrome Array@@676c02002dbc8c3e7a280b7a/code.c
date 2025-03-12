@@ -1,5 +1,5 @@
 #include <stdio.h>
-void palindromeArray(int arr[],int n){
+int palindromeArray(int arr[],int n){
     for(int i;i<n/2;i++){
         int temp=arr[i];
         arr[i]=arr[n-i-1];
