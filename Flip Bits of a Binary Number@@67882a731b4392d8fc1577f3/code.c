@@ -24,7 +24,7 @@ int main() {
 
     printBinary(flipped);
 
-    printf("%u", flipped);
+    printf("%d", flipped);
 
     return 0;
 }
