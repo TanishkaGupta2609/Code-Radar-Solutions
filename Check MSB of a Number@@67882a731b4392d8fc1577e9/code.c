@@ -16,9 +16,9 @@ int main() {
     scanf("%d", &num);
 
     if (num == 0) {
-        printf("MSB is undefined for 0");
+        printf("Not Set");
     } else {
-        printf("MSB position is: %d", findMSB(num));
+        printf("Set");
     }
 
     return 0;
