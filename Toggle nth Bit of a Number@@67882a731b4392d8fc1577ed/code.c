@@ -10,7 +10,7 @@ int main() {
     scanf("%d", &n);
 
     int toggled = toggleNthBit(number, n);
-    printf("%d"toggled);
+    printf("%d",toggled);
 
     return 0;
 }
