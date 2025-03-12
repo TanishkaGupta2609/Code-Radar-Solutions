@@ -16,7 +16,7 @@ int main()
         scanf("%d",&arr[i]);
     }
    if(palindromeArray(arr,n)){
-    printf("No");
+    printf("NO");
    }
    else{
     printf("YES");
