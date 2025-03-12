@@ -8,10 +8,8 @@ int sortArray(int arr[],int n){
                 arr[i]=temp;
             }
         }
-        else{
-            printf("-1");
-        }
     }
+    return -1;
 }
 int main(){
     int n;
