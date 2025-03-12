@@ -4,10 +4,8 @@ int palindromeArray(int arr[],int n){
         if(arr[i]!=arr[n-i-1]){
             return 0;
         }
-        else{
-            return 1;
-        }
     }
+    return 1;
 }
 int main()
 {
