@@ -21,5 +21,5 @@ int main(){
         scanf("%d",&arr[n]);
     }
     sortArray(arr,n);
-    printf("%d",arr[n]);
+    printf("%d",arr[n-2]);
 }
