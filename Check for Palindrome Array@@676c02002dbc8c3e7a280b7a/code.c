@@ -1,9 +1,12 @@
 #include <stdio.h>
 int palindromeArray(int arr[],int n){
     for(int i;i<n/2;i++){
-        int temp=arr[i];
-        arr[i]=arr[n-i-1];
-        arr[n-i-1]=temp;
+        if(arr[i]!=arr[n-i-1]){
+            return 0;
+        }
+        else{
+            return 1;
+        }
     }
 }
 int main()
@@ -14,6 +17,10 @@ int main()
     for(int i=0;i<n;i++){
         scanf("%d",arr[i]);
     }
-    palindromeArray(arr,n);
-    printf("%d",&arr[n]);
+   if(palindromeArray){
+    printf("YES");
+   }
+   else{
+    printf("NO");
+   }
 }
