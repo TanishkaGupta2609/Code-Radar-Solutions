@@ -1,24 +1,13 @@
 #include <stdio.h>
 
-int findMSB(int n) {
-    int msb = -1;
-
-    while (n > 0) {
-        n = n >> 1;
-        msb++;
-    }
-
-    return msb;
-}
-
 int main() {
-    int num;
-    scanf("%d", &num);
+    unsigned int num;
+    scanf("%u", &num);
 
-    if (num == 0) {
-        printf("Set");
+    if (num & (1u << 31)) {
+        printf("Set\n");
     } else {
-        printf("Not Set");
+        printf("Not Set\n");
     }
 
     return 0;
