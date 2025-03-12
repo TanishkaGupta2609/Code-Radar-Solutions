@@ -16,9 +16,9 @@ int main() {
     scanf("%d", &num);
 
     if (num == 0) {
-        printf("Not Set");
-    } else {
         printf("Set");
+    } else {
+        printf("Not Set");
     }
 
     return 0;
