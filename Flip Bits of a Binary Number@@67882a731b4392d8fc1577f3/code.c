@@ -6,10 +6,10 @@ void printBinary(unsigned int num) {
         int bit = (num >> i) & 1;
         if (bit) started = 1;
         if (started)
-            printf("%d", bit);
+            return bit;
     }
     if (!started)
-        printf("0");
+        return 0;
 }
 
 int main() {
