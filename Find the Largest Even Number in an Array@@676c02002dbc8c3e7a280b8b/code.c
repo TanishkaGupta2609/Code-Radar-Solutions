@@ -8,6 +8,9 @@ void sortArray(int arr[],int n){
                 arr[i+1]=temp;
             }
         }
+        else{
+            return -1;
+        }
     }
 }
 int main(){
