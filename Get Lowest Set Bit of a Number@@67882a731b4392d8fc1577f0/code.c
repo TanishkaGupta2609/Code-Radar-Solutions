@@ -14,7 +14,7 @@ int getLowestSetBit(int num) {
 
 int main() {
     int number;
-    printf("Enter a number: ");
+    
     scanf("%d", &number);
 
     int pos = getLowestSetBit(number);
