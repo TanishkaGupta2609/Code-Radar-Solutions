@@ -6,7 +6,7 @@ int sortArray(int arr[],int n){
                 int temp=arr[i+1];
                 arr[i+1]=arr[i];
                 arr[i]=temp;
-                return arr[n-1];
+    return arr[n-1];
             }
         }
     }
