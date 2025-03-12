@@ -1,10 +1,9 @@
 int searchInRotatedArray(int arr[],int n,int target){
     for(int i=0;i<n;i++){
         if(arr[i]==target){
-            printf("%d",i);
-            break;
+            return i;
         }
     }
-    printf("-1");
+    return -1;
     return 0;
 }
