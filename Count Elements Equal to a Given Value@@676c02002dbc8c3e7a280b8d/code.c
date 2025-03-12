@@ -4,9 +4,9 @@ int funcArray(int arr[],int n,int k){
     for(int i=0;i<n;i++){
         if (arr[i]==k){
             count++;
-    printf("%d",count);
         }
     }
+    printf("%d",count);
 }
 int main(){
     int n;
