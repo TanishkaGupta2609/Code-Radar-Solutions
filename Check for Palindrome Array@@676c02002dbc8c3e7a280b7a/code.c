@@ -16,10 +16,10 @@ int main()
         scanf("%d",&arr[i]);
     }
    if(palindromeArray(arr,n)){
-    printf("YES");
+    printf("No");
    }
    else{
-    printf("NO");
+    printf("YES");
    }
    return 0;
 }
