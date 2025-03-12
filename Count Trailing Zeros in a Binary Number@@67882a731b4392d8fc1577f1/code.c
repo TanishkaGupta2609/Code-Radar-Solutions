@@ -19,7 +19,7 @@ int main() {
     scanf("%u", &num);
 
     int result = countTrailingZeros(num);
-    printf(" %u: %d\n", num, result);
+    printf("%d", result);
 
     return 0;
 }
