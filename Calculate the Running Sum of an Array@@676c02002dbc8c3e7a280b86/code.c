@@ -1,14 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
-int RunningSum(int num){
-    int count=0;
-     num=abs(num);
-    while(num>0){
-        int temp=num%10;
-        count+=temp;
-        num=num/10;
+int RunningSum(int arr[n],int n){
+    for (int i=0;i<n;i++){
+        sum+=arr[i];
     }
-    return count;
+    return;
 }
 int main()
 {
