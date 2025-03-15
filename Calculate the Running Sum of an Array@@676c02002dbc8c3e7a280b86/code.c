@@ -19,7 +19,7 @@ int main()
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++){
-        printf("%d",RunningSum(arr[i]));
+        printf("%d ",RunningSum(arr[i]));
     }
     return 0;
 }
