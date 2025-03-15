@@ -1,5 +1,5 @@
 #include <stdio.h>
-int RunningSum(int arr[n],int n){
+int RunningSum(int arr[],int n){
     for (int i=0;i<n;i++){
         sum+=arr[i];
         printf("%d",sum);
