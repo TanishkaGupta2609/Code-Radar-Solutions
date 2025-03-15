@@ -8,7 +8,7 @@ int SumOfDigits(int arr[],int n){
             i=i/10;
         }
     }
-    printf("%d",count[]);
+    printf("%d",count);
 }
 int main(){
     int n;
