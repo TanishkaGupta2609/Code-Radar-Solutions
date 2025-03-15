@@ -7,7 +7,7 @@ int mainrray(int arr[],int n){
         if(arr[0]>arr[1]){
             printf("%d",arr[0]);
         }
-        if(arr[0]==arr[1]){
+        else if(arr[0]=arr[1]){
             printf("-1");
         }
         else{
