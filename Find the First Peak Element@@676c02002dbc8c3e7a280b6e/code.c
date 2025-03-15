@@ -19,6 +19,10 @@ void mainrray(int arr[],int n){
             printf("%d",arr[i]);
             return;
         }
+        if(arr[n-1]>arr[n-2]){
+            printf("%d",arr[n-1]);
+            return;
+        }
     }
     printf("-1");
 
