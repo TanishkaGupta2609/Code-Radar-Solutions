@@ -2,6 +2,7 @@
 int RunningSum(int arr[n],int n){
     for (int i=0;i<n;i++){
         sum+=arr[i];
+        printf("%d",sum);
     }
     return;
 }
@@ -14,8 +15,7 @@ int main()
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++){
-        int result=RunningSum(arr[i]);
-        printf("%d",result);
+       RunningSum(arr,n);
     }
     return 0;
 }
