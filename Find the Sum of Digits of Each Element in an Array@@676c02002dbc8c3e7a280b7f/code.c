@@ -2,7 +2,7 @@
 int SumOfDigits(int arr[],int n){
     int count=0;
     for(int i=0;i<n;i++){
-        while(i>0){
+        while(arr[i]>0){
             int temp=i%10;
             count+=temp;
             i=i/10;
