@@ -17,9 +17,6 @@ int mainrray(int arr[],int n){
             printf("%d",arr[i]);
             break;
         }
-        else if(arr[0]=arr[1]){
-            printf("-1");
-        }
     }
 
    
