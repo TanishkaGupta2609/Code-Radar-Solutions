@@ -5,7 +5,6 @@ int RunningSum(int arr[],int n){
         sum+=arr[i];
         printf("%d",sum);
     }
-    return;
 }
 int main()
 {
