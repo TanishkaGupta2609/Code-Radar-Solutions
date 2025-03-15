@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int RunningSum(int num){
     int count=0;
-    int num=abs(num);
+     num=abs(num);
     while(num>0){
         int temp=num%10;
         count+=temp;
