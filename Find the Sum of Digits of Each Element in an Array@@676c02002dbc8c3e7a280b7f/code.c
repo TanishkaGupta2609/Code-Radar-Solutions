@@ -1,7 +1,7 @@
 #include <stdio.h>
 int SumOfDigits(int num){
-    int count=0;
-    num=abs(num);
+        int count=0;
+        num=abs(num);
         while(num>0){
             int temp=num%10;
             count+=temp;
