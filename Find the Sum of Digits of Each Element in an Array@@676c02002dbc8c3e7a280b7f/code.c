@@ -19,7 +19,11 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int result=SumOfDigits(arr,n);
-    printf("%d",result);
+    for(int i=0;i<n;i++){
+        int result=SumOfDigits(arr,n);
+        printf("%d",result);
+    }
+    
+    
     return 0;
 }
