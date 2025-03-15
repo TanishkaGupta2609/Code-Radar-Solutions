@@ -2,6 +2,7 @@
 int mainrray(int arr[],int n){
     if (n==0 || n==1){
          printf("-1");
+         return;
     }
     if(n==2){
         if(arr[0]>arr[1]){
@@ -11,11 +12,12 @@ int mainrray(int arr[],int n){
         else{
             printf("%d",arr[1]);
         }
+        return;
     }
     for(int i=1;i<n;i++){
         if(arr[i]>arr[i-1] && arr[i]>arr[i+1]){
             printf("%d",arr[i]);
-            break;
+            return;
         }
     }
     printf("-1");
