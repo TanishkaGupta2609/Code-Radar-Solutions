@@ -18,6 +18,7 @@ int mainrray(int arr[],int n){
             break;
         }
     }
+    printf("-1");
 
    
 }
