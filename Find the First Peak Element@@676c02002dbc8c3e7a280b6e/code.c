@@ -1,5 +1,5 @@
 #include <stdio.h>
-int mainrray(int arr[],int n){
+void mainrray(int arr[],int n){
     if (n==0 || n==1){
          printf("-1");
          return;
