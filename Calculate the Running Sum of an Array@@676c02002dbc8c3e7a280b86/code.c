@@ -1,6 +1,6 @@
 #include <stdio.h>
 int RunningSum(int num){
-    count=0;
+    int count=0;
     while(num>0){
         int temp=num%10;
         count+=temp;
@@ -13,10 +13,10 @@ int main()
     int n;
     scanf("%d",&n);
     int arr[n];
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         scanf("%d",arr[i]);
     }
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         printf("%d",RunningSum(arr[i]));
     }
     return 0;
