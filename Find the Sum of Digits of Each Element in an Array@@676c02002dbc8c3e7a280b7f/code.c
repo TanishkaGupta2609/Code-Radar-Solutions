@@ -1,13 +1,11 @@
 #include <stdio.h>
-int SumOfDigits(int num,int n,int arr[]){
-    int count=0;
-    for(int i=0;i<n;i++){
-        int num=arr[i];
+int SumOfDigits(int num){
+    int count=0
         while(num>0){
             int temp=num%10;
             count+=temp;
             num=num/10;
-        }
+        
     }
     return count;
 
