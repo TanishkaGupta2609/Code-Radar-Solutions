@@ -20,7 +20,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++){
-        int result=SumOfDigits(arr[i]);
+        int result=SumOfDigits(arr,n);
         printf("%d",result);
     }
     
