@@ -1,6 +1,6 @@
 #include <stdio.h>
 int SumOfDigits(int arr[],int n){
-    count=0;
+    int count=0;
     for(i=0;i<n;i++){
         while(i>0){
             int temp=i%10;
