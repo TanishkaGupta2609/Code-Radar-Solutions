@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int SumOfDigits(int num){
         int count=0;
         num=abs(num);
