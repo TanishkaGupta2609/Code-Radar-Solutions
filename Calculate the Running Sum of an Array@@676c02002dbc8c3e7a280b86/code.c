@@ -14,7 +14,8 @@ int main()
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++){
-        printf("%d ",RunningSum(arr[i]));
+        int result=RunningSum(arr[i]);
+        printf("%d",result);
     }
     return 0;
 }
