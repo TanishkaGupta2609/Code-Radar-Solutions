@@ -20,3 +20,4 @@ int main()
         printf("%d",RunningSum(arr[i]));
     }
     return 0;
+}
