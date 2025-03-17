@@ -6,8 +6,8 @@ int main(){
     int len=strlen(ch);
     for(int i=0;i<len/2;i++){
         char temp=ch[i];
-        ch[i]=ch[n-i-1];
-        ch[n-i-1]=temp;
+        ch[i]=ch[len-i-1];
+        ch[len-i-1]=temp;
     }
     printf("%s",ch);
 }
