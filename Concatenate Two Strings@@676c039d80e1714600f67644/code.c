@@ -5,7 +5,7 @@ int main(){
     fgets(ch,100,stdin);
     fgets(ch_1,100,stdin);
     char ch_12[100]=strcat(ch,ch_1);
-    fputs(ch_12);
+    puts(ch_12);
     return 0;
 
 }
