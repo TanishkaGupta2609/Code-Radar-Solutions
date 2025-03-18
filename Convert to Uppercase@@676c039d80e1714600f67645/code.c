@@ -3,9 +3,10 @@
 int main()
 {
     char name[100];
-    scanf("%s",name);
+    fgets(name,100,stdin);
     for(int i=0;name[i]!='\0';i++){
-        printf("%c",toupper(name[i]));
+        name=toupper(name[i]);
     }
+    puts(name);
     return 0;
 }
