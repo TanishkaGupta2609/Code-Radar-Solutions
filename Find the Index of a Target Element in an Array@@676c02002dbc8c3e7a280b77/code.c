@@ -1,6 +1,6 @@
 #include <stdio.h>
 int printArray(int arr[],int n,int T){
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n+1;i++){
         if(T==arr[i]){
             return i;
         }
