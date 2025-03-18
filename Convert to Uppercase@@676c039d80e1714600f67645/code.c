@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <string.h>
+#include <ctype.h>
 int main()
 {
     char name[100];
     scanf("%s",name);
-    printf("%s",strupr(name));
+    printf("%s",toupper(name));
     return 0;
 }
