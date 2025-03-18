@@ -1,11 +1,11 @@
 #include <stdio.h>
-void printArray(int arr[],int n,int T){
+int printArray(int arr[],int n,int T){
     for(int i=0;i<n;i++){
         if(T==arr[i]){
-            printf("%d",i);
+            return i;
         }
     }
-    printf("-1");
+   return -1; 
 }
 int main()
 {
