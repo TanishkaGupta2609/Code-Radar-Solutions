@@ -1,6 +1,6 @@
 #include <stdio.h>
 int printArray(int arr[],int n,int T){
-    for(int i=0;i<n+1;i++){
+    for(int i=0;i<n;i++){
         if(T==arr[i]){
             return i;
         }
@@ -12,11 +12,11 @@ int main()
     int n;
     scanf("%d",&n);
     int arr[n];
-    int T;
-    scanf("%d",&T);
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int T;
+    scanf("%d",&T);
     printf("%d",printArray(arr,n,T));
     
     return 0;
