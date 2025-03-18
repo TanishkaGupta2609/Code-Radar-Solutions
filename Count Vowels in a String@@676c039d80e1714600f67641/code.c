@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void findVowel(str[100]){
+void findVowel(char str[100]){
     int count=0;
     for(int i=0;str[i]!='\0';i++){
           if (str[i]='a' ||str[i]='e' || str[i]='i' || str[i]='0' || str[i]='u' || ){
