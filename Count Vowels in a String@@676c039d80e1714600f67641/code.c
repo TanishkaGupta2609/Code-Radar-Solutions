@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <string.h>
-void findVowel(arr[i]){
+void findVowel(str[100]){
     int count=0;
-    for(int i=0;arr[i]!='\0';i++){
-          if (arr[i]='a' ||arr[i]='e' || arr[i]='i' || arr[i]='0' || arr[i]='u' || ){
+    for(int i=0;str[i]!='\0';i++){
+          if (str[i]='a' ||str[i]='e' || str[i]='i' || str[i]='0' || str[i]='u' || ){
             count++;
           }
     }
