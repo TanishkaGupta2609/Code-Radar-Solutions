@@ -1,7 +1,7 @@
 #include <stdio.h>
 void printArray(int arr[],int n,int T){
     for(int i=0;i<n;i++){
-        if(T= arr[i]){
+        if(T==arr[i]){
             printf("%d",i);
         }
     }
