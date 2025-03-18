@@ -3,11 +3,11 @@
 void findVowel(char str[100]){
     int count=0;
     for(int i=0;str[i]!='\0';i++){
-          if (str[i]='a' ||str[i]='e' || str[i]='i' || str[i]='0' || str[i]='u' ){
+          if (str[i]=='a' ||str[i]=='e' || str[i]=='i' || str[i]=='0' || str[i]=='u' ){
             count++;
           }
     }
-    printf("%d";count);
+    printf("%d",count);
 };
 int main()
 {
