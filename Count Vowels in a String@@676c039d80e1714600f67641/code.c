@@ -8,7 +8,7 @@ void findVowel(char str[100]){
           }
     }
     printf("%d",count);
-};
+}
 int main()
 {
     char str[100];
