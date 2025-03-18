@@ -12,7 +12,7 @@ void findVowel(char str[100]){
 int main()
 {
     char str[100];
-    fgets(str,100,stdin);
+    scanf("%s",str);
     findVowel(str[100]);
     return 0;
 }
