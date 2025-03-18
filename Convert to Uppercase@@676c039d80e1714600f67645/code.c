@@ -4,7 +4,6 @@ int main()
 {
     char name[100];
     scanf("%s",name);
-    strupr(name);
-    puts(name);
+    printf("%s",strupr(name));
     return 0;
 }
