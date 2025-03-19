@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-char ReplaceVowels(char str[],char ch){
+char* ReplaceVowels(char str[],char ch){
     for(int i=0;str[i]!='\0';i++){
         if (str[i] == '\n') continue; 
         if(str[i]!='a'&& str[i]!='e'&&str[i]!='i'&&str[i]!='o'&&str[i]!='u'&&
