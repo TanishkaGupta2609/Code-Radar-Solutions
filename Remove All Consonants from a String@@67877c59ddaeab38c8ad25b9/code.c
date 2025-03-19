@@ -15,7 +15,7 @@ int main(){
     fgets(str,100,stdin);
     char ch=' ';
     for(int i=0;str[i]!='\0';i++){
-        if(return(str,ch)){
+        if(ReplaceVowels(str,ch)){
             printf("%c",str[i]);
         }
     }
