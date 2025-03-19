@@ -9,7 +9,7 @@ int ReplaceVowels(char str[],char ch){
 }
 int main(){
     char str[100];
-    scanf("%s",str[]);
+    scanf("%s",str);
     char ch;
     scanf("%c",&ch);
     ReplaceVowels(str,ch);
