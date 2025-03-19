@@ -12,7 +12,7 @@ void ReplaceVowels(char str[],char ch){
 int main(){
     char str[100];
     scanf("%s",str);
-    char ch='';
+    char ch=' ';
     ReplaceVowels(str,ch);
     return 0;
 }
