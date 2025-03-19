@@ -8,7 +8,7 @@ void ReplaceVowels(char str[],char ch){
             str[i]=ch;
         }
     }
-    printf("%s"str); 
+    printf("%s",str); 
 }
 int main(){
     char str[100];
