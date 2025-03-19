@@ -8,6 +8,9 @@ int anagramString(char str1[],char str2[]){
             }
         }
     }
+    if(strlen(str1)!=strlen(str2)){
+        return 0;
+    }
     return 0;
 }
 int main()
