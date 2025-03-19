@@ -11,7 +11,7 @@ void ReplaceVowels(char str[],char ch){
 }
 int main(){
     char str[100];
-    scanf("%s",str);
+    fgets(str,100,stdin);
     char ch=' ';
     ReplaceVowels(str,ch);
     return 0;
