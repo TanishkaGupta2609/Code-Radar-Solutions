@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void anagramString(str1[],str2[]){
+void anagramString(char str1[],char str2[]){
     for(int i=0;str1[i]!='\0';i++){
         for(int j=0;str2[j]!='\0'){
             if(str[i]=str[j]){
