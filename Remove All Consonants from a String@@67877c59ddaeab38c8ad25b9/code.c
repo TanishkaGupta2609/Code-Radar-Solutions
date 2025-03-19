@@ -14,8 +14,6 @@ int main(){
     char str[100];
     fgets(str,100,stdin);
     char ch=' ';
-    for(int i=0;str[i]!='\0';i++){
-        ReplaceVowels(str,ch);
-    }
+    ReplaceVowels(str,ch);
     return 0;
 }
