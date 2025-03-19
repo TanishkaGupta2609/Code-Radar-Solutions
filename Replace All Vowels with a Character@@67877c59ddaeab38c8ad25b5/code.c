@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-int ReplaceVowels(char str[],char ch){
+void ReplaceVowels(char str[],char ch){
     for(int i=0;str[i]!='\0';i++){
         if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'){
-            printf("%c",ch);
+            char temp=str[i];
+            str[i]=ch;
+            ch=temp;
         }
     }
+    printf("%s",str);
 }
 int main(){
     char str[100];
