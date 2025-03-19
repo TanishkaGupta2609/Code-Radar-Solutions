@@ -6,8 +6,8 @@ int main()
     char str2[100];
     scanf("%s",str1);
     scanf("%s",str1);
-    char *str=strcmp(str1,str2);
-    if(str-str1==0){
+    char str=strcmp(str1,str2);
+    if(str==0){
         printf("Yes");
     }
     else{
