@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 int anagramString(char str1[],char str2[]){
-    for(int i=0;str1[i]!='\0';i++){
-        for(int j=0;str2[j]!='\0';j++){
-            if(str1[i]==str2[j]){
-                return 1;
-            }
-        }
+    int count1[256]={0};
+    int count2[256]={0};
+    for(int i=0;str1[i]!='\0',i++){
+        count1[int(str1)]++;
     }
-    if(strlen(str1)!=strlen(str2)){
-        return 0;
+    for(int i=0;str2[i]!='\0',i++){
+        count2[int(str2)]++;
+    }
+    if( count1[int(str1)]!=count2[int(str2)]){
+        return 1;
     }
     return 0;
 }
