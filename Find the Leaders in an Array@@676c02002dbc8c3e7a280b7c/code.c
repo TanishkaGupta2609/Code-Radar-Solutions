@@ -1,8 +1,8 @@
 #include <stdio.h>
 void leaderArray(int arr[],int n){
     for(int i=arr[n-2];i>=0;i--){
-        if(arr[i]<arr[i+1]){
-            printf("%d ",arr[i+1]);
+        if(arr[i]>arr[i+1]){
+            printf("%d ",arr[i]);
         }
     }
 }
