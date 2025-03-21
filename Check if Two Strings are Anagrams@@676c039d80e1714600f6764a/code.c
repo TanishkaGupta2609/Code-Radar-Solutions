@@ -23,10 +23,10 @@ int main()
     scanf("%s",str1);
     scanf("%s",str2);
     if(anagramString(str1,str2)){
-        printf("Yes");
+        printf("No");
     }
     else{
-        printf("No");
+        printf("Yes");
     }
     return 0;
     
