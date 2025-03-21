@@ -1,7 +1,7 @@
 #include <stdio.h>
 void leaderArray(int arr[],int n){
     int max_right=arr[n-1];
-    printf("%d",arr[n-1]);
+    printf("%d ",arr[n-1]);
     for(int i=n-2;i>=0;i--){
         if(arr[i]>max_right){
             printf("%d ",arr[i]);
