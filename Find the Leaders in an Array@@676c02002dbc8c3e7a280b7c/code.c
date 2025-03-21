@@ -5,9 +5,6 @@ void leaderArray(int arr[],int n){
             printf("%d ",arr[i+1]);
         }
     }
-    if(arr[n-1]>arr[n-2]){
-        printf("%d",arr[n-1]);
-    }
 }
 int main(){
     int n;
