@@ -1,12 +1,18 @@
 #include <stdio.h>
 void leaderArray(int arr[],int n){
+    int leaders[index];
     int max_right=arr[n-1];
+    leader[index++]=max_right;
     printf("%d ",arr[n-1]);
     for(int i=n-2;i>=0;i--){
         if(arr[i]>max_right){
             max_right=arr[i];
-            printf("%d ",max_right);
-        }
+            int max_right=arr[n-1];
+            leader[index++]=max_right;
+            }
+    }
+    for(int i=index-1;i>=0;i--){
+        printf("%d",leaders[i]);
     }
 }
 int main(){
@@ -14,7 +20,7 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+        scanf("%d",&leaders[i]);
     }
     leaderArray(arr,n);
     return 0;
