@@ -4,12 +4,12 @@ int anagramString(char str1[],char str2[]){
     int count1[256]={0};
     int count2[256]={0};
     for(int i=0;str1[i]!='\0';i++){
-        count1[int(str1)]++;
+        count1[int(str1[i])]++;
     }
     for(int i=0;str2[i]!='\0';i++){
-        count2[int(str2)]++;
+        count2[int(str2[i])]++;
     }
-    if( count1[int(str1)]!=count2[int(str2)]){
+    if( count1[int(str1[i])]!=count2[int(str2[i])]){
         return 1;
     }
     return 0;
