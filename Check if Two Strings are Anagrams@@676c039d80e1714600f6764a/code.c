@@ -10,7 +10,7 @@ int anagramString(char str1[],char str2[]){
         count2[(int)str2[i]]++;
     }
     for(int i=0;i<256;i++){
-        if(count1[i]!=count2[i]);
+        if(count1[i]!=count2[i])
         return 0;
     }
     
@@ -23,10 +23,10 @@ int main()
     scanf("%s",str1);
     scanf("%s",str2);
     if(anagramString(str1,str2)){
-        printf("No");
+        printf("Yes");
     }
     else{
-        printf("Yes");
+        printf("No");
     }
     return 0;
     
