@@ -13,7 +13,8 @@ void frequencyArray(int arr[],int n,int freq[]){
         }
     }
     for(int i=0;i<n;i++){
-        printf("%d\n",freq[i]);
+        if(freq[i]!=0)
+        printf("%d %d\n",arr[i],freq[i]);
     }
 }
 int main(){
