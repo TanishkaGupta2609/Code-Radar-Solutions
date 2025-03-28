@@ -1,6 +1,15 @@
 #include <stdio.h>
 void frequencyArray(int arr[],int n,int freq[]){
     for(int i=0;i<n;i++){
+        for(int j=0;j<i;j++){
+            if(arr[j]<arr[j+1]){
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+    for(int i=0;i<n;i++){
         int count=1;
         for(int j=0;j<i;j++){
             if(arr[i]==arr[j]){
@@ -13,8 +22,9 @@ void frequencyArray(int arr[],int n,int freq[]){
         }
     }
     for(int i=0;i<n;i++){
-        if(freq[i]!=0)
-        printf("%d %d\n",arr[i],freq[i]);
+        if(freq[i]!=0){
+            printf("%d %d\n",arr[i],freq[i]);
+        }
     }
 }
 int main(){
