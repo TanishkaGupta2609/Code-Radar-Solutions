@@ -2,7 +2,7 @@
 void frequencyArray(int arr[],int n,int freq[]){
     for(int i=0;i<n;i++){
         int count=1;
-        for(j=0;j<i;j++){
+        for(int j=0;j<i;j++){
             if(arr[i]==arr[j]){
                 count++;
                 freq[j]=-1;
