@@ -5,7 +5,7 @@ void frequencyArray(int arr[],int n,int freq[]){
         for(int j=0;j<i;j++){
             if(arr[i]==arr[j]){
                 count++;
-                freq[j]=-1;
+                freq[j]=0;
             }
         }
         if(freq[i]!=0){
@@ -13,7 +13,7 @@ void frequencyArray(int arr[],int n,int freq[]){
         }
     }
     for(int i=0;i<n;i++){
-        printf("%d",freq[i]);
+        printf("%d\n",freq[i]);
     }
 }
 int main(){
@@ -23,7 +23,7 @@ int main(){
     int freq[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
-        freq[i]=0;
+        freq[i]=-1;
     }
     frequencyArray(arr,n,freq);
     return 0;
