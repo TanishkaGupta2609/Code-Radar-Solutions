@@ -16,9 +16,6 @@ int SmallestElement(int arr[],int n){
         if(arr[i+1]!=arr[i]){
             return arr[i+1];
         }
-        else {
-            return -1;
-        }
     }
 
 }
