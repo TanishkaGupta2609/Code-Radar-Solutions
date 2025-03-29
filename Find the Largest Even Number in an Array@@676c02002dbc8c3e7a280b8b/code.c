@@ -1,10 +1,10 @@
 #include <stdio.h>
 int SortedArray(int arr[],int n){
     int found=0;
-    int largest_num;
+    int largest_num=-1;
     for(int i=0;i<n-1;i++){
         if(arr[i]%2==0){
-            if(arr[i]>arr[i+1]){
+            if(arr[i]>largest_num){
                 largest_num=arr[i];
                 found=1;
             }
