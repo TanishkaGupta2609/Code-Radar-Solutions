@@ -1,5 +1,5 @@
 #include <stdio.h>
-void SmallestElement(int arr[],int n){
+int SmallestElement(int arr[],int n){
     for(int i=0;i<n;i++){
         for(int j=0;j<n-i-1;j++){
             if(arr[j]<arr[j+1]){
@@ -8,9 +8,7 @@ void SmallestElement(int arr[],int n){
                 arr[j]=temp;
             }
         }
-    }
-    for(int i=0;i<n;i++){
-        printf("%d",arr[i+1]);
+        return arr[i+1];
     }
 }
 int main(){
@@ -20,6 +18,11 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    SmallestElement(arr,n);
+   if(SmallestElement(arr,n)){
+    printf("%d",SmallestElement(arr,n));
+   }
+   else{
+    printf("-1");
+   }
     return 0;
 }
