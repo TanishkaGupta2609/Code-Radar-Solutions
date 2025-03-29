@@ -1,5 +1,5 @@
 #include <stdio.h>
-void SortedArray(int arr[],int n){
+int SortedArray(int arr[],int n){
     int found=0;
     int largest_num;
     for(int i=0;i<n-1;i++){
@@ -14,10 +14,7 @@ void SortedArray(int arr[],int n){
             }
         } 
     }
-    printf("%d",largest_num);
-    if(!found){
-        printf("-1");
-    }
+    return largest_num
 }
 int main(){
     int n;
@@ -26,6 +23,11 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    SortedArray(arr,n);
+    if(SortedArray(arr,n)){
+        printf("%d",SortedArray(arr,n))
+    }
+    else{
+        printf("-1");
+    }
     return 0;
 }
