@@ -7,8 +7,14 @@ int SmallestElement(int arr[],int n){
                 arr[j+1]=arr[j];
                 arr[j]=temp;
             }
+            else if(arr[j]==arrj[j+1]){
+                return -1;
+            }
         }
         return arr[i+1];
+    }
+    if(n=1){
+        return -1;
     }
 }
 int main(){
