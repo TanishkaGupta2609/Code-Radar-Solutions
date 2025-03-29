@@ -23,6 +23,9 @@ int main(){
     if(increasingArray(arr,n) || decreasingArray(arr,n)){
         printf("YES");
     }
+    else if(n==1){
+        printf("YES");
+    }
     else{
         printf("NO");
     }
