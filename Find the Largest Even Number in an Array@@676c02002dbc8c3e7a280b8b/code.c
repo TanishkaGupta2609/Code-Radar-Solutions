@@ -14,7 +14,7 @@ int SortedArray(int arr[],int n){
             }
         } 
     }
-    return largest_num
+    return largest_num;
 }
 int main(){
     int n;
