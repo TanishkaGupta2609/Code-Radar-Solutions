@@ -1,10 +1,16 @@
 #include <stdio.h>
-int PrimeNumber(int arr[],int n){
-    int count=0;
-    for(int i=0;i<n;i++){
+int PrimeNumber(int num){
         for(int j=2;j<n;j++){
-            if(i%j!=0)
-        count++;
+            if(j*j%num==0)
+            return 0;
+        }
+    return 1;
+}
+int isPrime(int arr[],int n){
+    count =0;
+    for(int i=0;i<n;i++){
+        if(PrimeNumber(num)){
+            count++;
         }
     }
     return count;
@@ -16,7 +22,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-int s=PrimeNumber(arr,n);
+int s=isPrime(arr,n);
 printf("%d",s);
 return 0;   
 }
