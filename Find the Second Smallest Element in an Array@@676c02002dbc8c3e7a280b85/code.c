@@ -8,9 +8,10 @@ void SmallestElement(int arr[],int n){
                 arr[j]=temp;
             }
         }
-        printf("%d",arr[i]);
     }
-    printf("-1");
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i+1]);
+    }
 }
 int main(){
     int n;
