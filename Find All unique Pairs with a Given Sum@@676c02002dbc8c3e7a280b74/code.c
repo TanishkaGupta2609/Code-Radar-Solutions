@@ -15,6 +15,8 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    UniqueArray(arr,n,T);
+    int k;
+    scanf("%d",&k);
+    UniqueArray(arr,n,k);
     return 0;
 }
