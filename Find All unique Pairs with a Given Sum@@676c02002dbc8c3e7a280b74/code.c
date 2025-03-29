@@ -9,7 +9,6 @@ void UniqueArray(int arr[],int n,int k){
             if(arr[i]+arr[j]==k){
                 printf("%d %d\n",arr[i],arr[j]);
             }
-            return;
         }
     }
 }
