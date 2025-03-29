@@ -10,7 +10,7 @@ int SortedArray(int arr[],int n){
             }
             else if(arr[i]<0){
                 if(arr[i]>arr[i+1]);
-                largest_num=arr[i+1];
+                largest_num=arr[i];
                 found =1;
             }
         } 
