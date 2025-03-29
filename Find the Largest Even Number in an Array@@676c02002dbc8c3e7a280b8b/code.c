@@ -1,16 +1,12 @@
 #include <stdio.h>
-int sortArray(int arr[],int n){
+void SortedArray(int arr[],int n){
     for(int i=0;i<n;i++){
         if(arr[i]%2==0){
-            if(arr[i]>arr[i+1]){
-                int temp=arr[i+1];
-                arr[i+1]=arr[i];
-                arr[i]=temp;
-               return arr[n];
-            }
+            if(arr[i]>arr[i+1]);
+            printf("%d",arr[i]);
         }
     }
-    return -1;
+    printf("-1");
 }
 int main(){
     int n;
@@ -19,7 +15,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int s=sortArray(arr,n);
-    printf("%d",s);
-
+    SortedArray(arr,n);
+    return 0;
 }
