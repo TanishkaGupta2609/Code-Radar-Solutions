@@ -7,6 +7,7 @@ void repeatingElement(int arr[],int n){
             if(arr[i]==arr[j]){
                 printf("%d",arr[i]);
                 found=1;
+                return;
             }
         }
     }
