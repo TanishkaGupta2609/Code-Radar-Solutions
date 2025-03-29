@@ -2,7 +2,7 @@
 void UniqueArray(int arr[],int n,int k){
     for(int i=0;i<n;i++){
         if(arr[i]==arr[i+1] || arr[i]+arr[i+1]){
-            printf("%d %d/n",arr[i],arr[i+1]);
+            printf("%d %d\n",arr[i],arr[i+1]);
             return;
         }
         for(int j=i+1;j<n;j++){
