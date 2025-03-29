@@ -14,6 +14,7 @@ void SortedArray(int arr[],int n){
             }
         } 
     }
+    printf("%d",largest_num);
     if(!found){
         printf("-1");
     }
