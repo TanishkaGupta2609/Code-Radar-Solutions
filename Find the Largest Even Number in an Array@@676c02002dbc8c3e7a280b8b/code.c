@@ -6,6 +6,7 @@ void SortedArray(int arr[],int n){
             printf("%d",arr[i]);
             found=1;
         }
+        found=0;
     }
     if(!found){
         printf("-1");
