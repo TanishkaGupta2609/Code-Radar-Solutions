@@ -17,6 +17,7 @@ int SmallestElement(int arr[],int n){
             return arr[i+1];
         }
     }
+    return -1;
 }
 int main(){
     int n;
