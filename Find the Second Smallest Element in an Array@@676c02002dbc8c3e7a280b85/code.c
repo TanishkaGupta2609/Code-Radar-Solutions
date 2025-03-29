@@ -10,9 +10,6 @@ int SmallestElement(int arr[],int n){
                 arr[j+1]=arr[j];
                 arr[j]=temp;
             }
-            else if(arr[j]==arr[j+1]){
-                return -1;
-            }
         }
     }
     for(int i=0;i<n;i++){
