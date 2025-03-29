@@ -20,5 +20,5 @@ int main(){
         scanf("%d",&arr[i]);
     }
     SmallestElement(arr,n);
-    rerurn 0;
+    return 0;
 }
