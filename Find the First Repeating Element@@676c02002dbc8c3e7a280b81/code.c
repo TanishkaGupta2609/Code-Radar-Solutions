@@ -1,15 +1,18 @@
 #include <stdio.h>
-int repeatingElement(int arr[],int n){
+void repeatingElement(int arr[],int n){
     int num;
+    int found=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
-                num=arr[i];
+                printf("%d",arr[i]);
+                found=1;
             }
         }
-        return num;
     }
-    return -1;
+    if(!found){
+        printf("-1");
+    }
 }
 int main(){
     int n;
@@ -18,12 +21,13 @@ int main(){
     for(int i=0;i<n;i++){
         printf("%d",&arr[i]);
     }
-    if(repeatingElement(arr,n)){
-        printf("%d",repeatingElement(arr,n));
-    }
-    else{
-        printf("-1");
-    }
+    // if(repeatingElement(arr,n)){
+    //     printf("%d",repeatingElement(arr,n));
+    // }
+    // else{
+    //     printf("-1");
+    // }
+    repeatingElement(arr,n);
     return 0;
 
 }
