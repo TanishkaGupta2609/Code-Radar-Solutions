@@ -19,7 +19,7 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        printf("%d",&arr[i]);
+        scanf("%d",&arr[i]);
     }
     // if(repeatingElement(arr,n)){
     //     printf("%d",repeatingElement(arr,n));
