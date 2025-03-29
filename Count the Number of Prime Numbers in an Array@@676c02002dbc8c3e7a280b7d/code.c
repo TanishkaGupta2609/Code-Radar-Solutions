@@ -1,5 +1,8 @@
 #include <stdio.h>
 int PrimeNumber(int num){
+    if(num<=1){
+        return 0;
+    }
         for(int j=2;j*j<=num;j++){
             if(num%j==0)
             return 0;
