@@ -6,9 +6,6 @@ void UniqueArray(int arr[],int n,int k){
                 printf("%d %d\n",arr[i],arr[j]);
             }
         }
-        if(isduplicate=1){
-            printf("%d %d/n",arr[i],arr[j]);
-        }
     }
 }
 int main(){
