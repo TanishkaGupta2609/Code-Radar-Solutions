@@ -13,7 +13,7 @@ int SmallestElement(int arr[],int n){
         }
         return arr[i+1];
     }
-    if(n=1){
+    if(n==1){
         return -1;
     }
 }
