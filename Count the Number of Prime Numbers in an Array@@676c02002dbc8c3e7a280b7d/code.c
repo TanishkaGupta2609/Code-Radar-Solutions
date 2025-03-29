@@ -4,7 +4,7 @@ int PrimeNumber(int arr[],int n){
     for(int i=0;i<n;i++){
         for(int j=2;j<n;j++){
             if(i%j!=0)
-                count++;
+        count++;
         }
     }
     return count;
