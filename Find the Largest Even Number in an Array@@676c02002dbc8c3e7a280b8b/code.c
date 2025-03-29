@@ -9,7 +9,7 @@ int SortedArray(int arr[],int n){
                 found=1;
             }
             else if(arr[i]<0){
-                if(arr[i]<arr[i+1]);
+                if(arr[i]>arr[i+1]);
                 largest_num=arr[i+1];
                 found =1;
             }
