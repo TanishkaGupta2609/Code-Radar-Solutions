@@ -8,10 +8,6 @@ int SortedArray(int arr[],int n){
                 largest_num=arr[i];
                 found=1;
             }
-            else if(arr[i-1]>arr[i-2]){
-                largest_num=arr[i-1];
-                found=1;
-            }
         } 
     }
     return largest_num;
