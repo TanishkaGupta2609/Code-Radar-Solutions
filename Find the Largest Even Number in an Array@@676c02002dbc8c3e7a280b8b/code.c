@@ -2,8 +2,8 @@
 void SortedArray(int arr[],int n){
     for(int i=0;i<n;i++){
         if(arr[i]%2==0){
-            if(arr[i]>arr[i+1]);
-            printf("%d",arr[i]);
+            if(arr[i]<arr[i+1]);
+            printf("%d",arr[i+1]);
         }
     }
     printf("-1");
