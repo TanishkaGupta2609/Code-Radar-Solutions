@@ -1,13 +1,13 @@
 #include <stdio.h>
 int PrimeNumber(int num){
-        for(int j=2;j<num;j++){
+        for(int j=2;j*j<num;j++){
             if(j*j%num==0)
             return 0;
         }
     return 1;
 }
 int isPrime(int arr[],int n){
-    count =0;
+    int count=0;
     for(int i=0;i<n;i++){
         if(PrimeNumber(num)){
             count++;
