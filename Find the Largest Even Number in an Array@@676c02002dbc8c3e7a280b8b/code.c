@@ -24,7 +24,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     if(SortedArray(arr,n)){
-        printf("%d",SortedArray(arr,n))
+        printf("%d",SortedArray(arr,n));
     }
     else{
         printf("-1");
