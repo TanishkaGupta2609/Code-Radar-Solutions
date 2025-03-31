@@ -2,7 +2,7 @@
 void mostFrequent(int arr[],int n){
     int count=1;
     int max_count=1;
-    int maxcount[];
+    int maxcount;
     for(int i=0;i<n-1;i++){
         for(int j=0;j<n-i-1;j++){
             int temp=arr[j];
@@ -16,7 +16,7 @@ void mostFrequent(int arr[],int n){
         }
         if(max_count>count){
             count=max_count;
-            maxcount[]=arr[i];
+            maxcount=arr[i];
         }
         count=1;
     }
