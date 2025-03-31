@@ -1,5 +1,5 @@
 #include <stdio.h>
-void frequencyArray(int arr[],int n,int freq[]){
+void frequencyArray(int arr[],int n){
     for(int i=0;i<n;i++){
         for(int j=0;j<i;j++){
             if(arr[j]>arr[j+1]){
@@ -9,21 +9,14 @@ void frequencyArray(int arr[],int n,int freq[]){
             }
         }
     }
-    for(int i=0;i<n;i++){
-        int count=1;
-        for(int j=0;j<i;j++){
-            if(arr[i]==arr[j]){
-                count++;
-                freq[j]=0;
-            }
+    int count =1;
+    for(int i=0;i<n-1;i++){
+        if(i<n-1 && arr[i+1]==arr[i]){
+            count++;
         }
-        if(freq[i]!=0){
-            freq[i]=count;
-        }
-    }
-    for(int i=0;i<n;i++){
-        if(freq[i]!=0){
-            printf("%d %d\n",arr[i],freq[i]);
+        else{
+            printf("%d",arr[i],count);
+            count =1;
         }
     }
 }
@@ -34,9 +27,8 @@ int main(){
     int freq[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
-        freq[i]=-1;
     }
-    frequencyArray(arr,n,freq);
+    frequencyArray(arr,n);
     return 0;
 
 }
