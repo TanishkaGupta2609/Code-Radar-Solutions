@@ -14,7 +14,7 @@ void mostFrequent(int arr[],int n){
         if(arr[i]==arr[i+1]){
             count++;
         }
-        if(max_count>count){
+        if(max_count<count){
             count=max_count;
             maxcount=arr[i];
         }
