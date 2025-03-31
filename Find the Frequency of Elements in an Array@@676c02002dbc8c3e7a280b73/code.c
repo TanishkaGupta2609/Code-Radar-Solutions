@@ -15,7 +15,7 @@ void frequencyArray(int arr[],int n){
             count++;
         }
         else{
-            printf("%d",arr[i],count);
+            printf("%d %d\n",arr[i],count);
             count =1;
         }
     }
