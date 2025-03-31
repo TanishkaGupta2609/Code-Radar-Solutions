@@ -20,6 +20,7 @@ void mostFrequent(int arr[],int n){
         }
         count=1;
     }
+    printf("%d",maxcount);
 }
 int main(){
     int n;
