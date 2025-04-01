@@ -1,6 +1,6 @@
 #include <stdio.h>
 void RotateArray(int arr[],int n,int k){
-    int k=k%n;
+     k=k%n;
     int temp[k];
     for(int i=0;i<n;i++){
         temp[i]=arr[n-k-1];
