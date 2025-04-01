@@ -7,9 +7,9 @@ void UniqueArray(int arr[],int n,int k){
                 num_1=arr[i];
                 num_2=arr[j];
             }
+            printf("%d %d",num_1,num_2);
         }
     }
-    printf("%d %d",num_1,num_2);
 }
 int main(){
     int n;
