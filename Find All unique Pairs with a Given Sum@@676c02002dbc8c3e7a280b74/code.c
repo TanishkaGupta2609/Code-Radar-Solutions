@@ -1,10 +1,11 @@
 #include <stdio.h>
 void UniqueArray(int arr[],int n,int k){
     for(int i=0;i<n;i++){
+        int found=0;
         for(int j=i+1;j<n;j++){
             if(arr[i]+arr[j]==k){
                  printf("%d %d",arr[i],arr[j]);
-                return;
+                found=1;
             }
         }
     }
