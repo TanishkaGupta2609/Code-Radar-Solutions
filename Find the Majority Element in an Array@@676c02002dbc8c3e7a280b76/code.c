@@ -7,11 +7,9 @@ int majorityElement(int arr[],int n){
                 count++;
             }
         }
-            else{
-                if(count>n/2){
-                    return arr[i];
+        if(count>n/2){
+             return arr[i];
                 }
-            }
             
         }
     
