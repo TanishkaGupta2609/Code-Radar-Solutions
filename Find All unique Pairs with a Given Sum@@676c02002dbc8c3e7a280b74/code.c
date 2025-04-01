@@ -1,15 +1,13 @@
 #include <stdio.h>
 void UniqueArray(int arr[],int n,int k){
     for(int i=0;i<n;i++){
-         int num_1,num_2;
         for(int j=i+1;j<n;j++){
             if(arr[i]+arr[j]==k){
-                num_1=arr[i];
-                num_2=arr[j];
+                 printf("%d %d",arr[i],arr[j]);
+                
             }
         }
     }
-    printf("%d %d",num_1,num_2);
 }
 int main(){
     int n;
