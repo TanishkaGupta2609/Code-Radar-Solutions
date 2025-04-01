@@ -24,7 +24,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int s=majorityElement(arr,n);
-    if(majorityElement(arr,n)){
+    if(majorityElement(arr,n)!=-1){
         printf("%d",s);
     }
     else{
