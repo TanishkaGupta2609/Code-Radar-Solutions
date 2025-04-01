@@ -23,10 +23,8 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int k;
-    scanf("%d",&k);
-    int s=majorityElement(arr,n,k);
-    if(majorityElement(arr,n,k)){
+    int s=majorityElement(arr,n);
+    if(majorityElement(arr,n)){
         printf("%d",s);
     }
     else{
