@@ -12,7 +12,7 @@ void RotateArray(int arr[],int n,int k){
         arr[i]=temp[i];
     }
     for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
+        printf("%d\n",arr[i]);
     }
 }
 int main(){
