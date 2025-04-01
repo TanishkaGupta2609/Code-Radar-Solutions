@@ -14,7 +14,7 @@ int majorityElement(int arr[],int n){
             }
         }
     
-    return 1;
+    return 0;
 }
 int main(){
     int n;
