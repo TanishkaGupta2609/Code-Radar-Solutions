@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 void MinDiffArray(int arr[],int n){
     int num;
     int diff_num=arr[1]-arr[0];
