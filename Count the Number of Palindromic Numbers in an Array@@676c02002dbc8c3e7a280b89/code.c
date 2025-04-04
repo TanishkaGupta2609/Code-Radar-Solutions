@@ -1,6 +1,6 @@
 #include <stdio.h>
 void PalindromicArray(int arr[],int n){
-    int count=0;
+    int count=0,rev;
     for(int i=0;i<n;i++){
        int num=arr[i];
        while(num>0){
