@@ -5,7 +5,7 @@ void PalindromicArray(int arr[],int n){
        int num=arr[i];
        while(num>0){
         int digit=num%10;
-        rev+=digit;
+        int rev+=digit;
         num/10;
        } 
        if(rev==num){
