@@ -8,6 +8,7 @@ void PalindromicArray(int arr[],int n){
         rev+=digit;
         num=num/10;
        } 
+       rev=0;
        if(rev==num){
         count++;
        }
