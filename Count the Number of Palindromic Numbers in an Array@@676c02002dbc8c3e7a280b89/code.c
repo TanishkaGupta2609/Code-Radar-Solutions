@@ -3,13 +3,14 @@ void PalindromicArray(int arr[],int n){
     int count=0,rev;
     for(int i=0;i<n;i++){
        int num=arr[i];
+       int original=num;
        while(num>0){
         int digit=num%10;
-        rev+=digit;
+        rev=rev*10+digit;
         num=num/10;
        } 
        rev=0;
-       if(rev==num){
+       if(rev==original){
         count++;
        }
     }
