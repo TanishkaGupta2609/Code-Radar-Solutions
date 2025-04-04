@@ -1,6 +1,6 @@
 #include <stdio.h>
 void MaxproductNum(int arr[],int n){
-    int max_prod=1;
+    int max_prod=arr[0]*arr[1];
     int prod_num;
     for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
