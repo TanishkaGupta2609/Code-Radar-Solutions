@@ -3,8 +3,8 @@ void ZeroArray(int arr[],int n){
     for(int i=0;i<n;i++){
         if(arr[i]==0){
             int temp=arr[i];
-            arr[i]=arr[n-i];
-            arr[n-i]=temp;
+            arr[i]=arr[n-i-1];
+            arr[n-i-1]=temp;
         }
     }
     for(int i=0;i<n;i++){
