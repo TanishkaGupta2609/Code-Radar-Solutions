@@ -1,11 +1,13 @@
 #include <stdio.h>
 void ZeroArray(int arr[],int n){
+    int index=0;
     for(int i=0;i<n;i++){
-        if(arr[i]==0){
-            int temp=arr[i];
-            arr[i]=arr[n-i-1];
-            arr[n-i-1]=temp;
+        if(arr[i]!=0){
+            arr[index++]=arr[i];
         }
+    }
+    while(index<n){
+        arr[index++]=0;
     }
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
