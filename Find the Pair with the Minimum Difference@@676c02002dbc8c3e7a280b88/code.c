@@ -6,7 +6,7 @@ void MinDiffArray(int arr[],int n){
         return;
     }
     int max_diff=arr[0]-arr[1];
-    int num;
+    int num,num1=arr[0],num2=arr[1];
     for(int i=0;i<n;i++){
         for(int j=0;j<n-i-1;j++){
             if(arr[j]>arr[j+1]){
@@ -20,10 +20,11 @@ void MinDiffArray(int arr[],int n){
         num=abs(arr[i]-arr[i+1]);
         if(num<max_diff){
             max_diff=num;
-            printf("%d %d",arr[i],arr[i+1]);
+            num1=arr[i];
+            num2=arr[i+1];
         }
     }
-    
+     printf("%d %d",num1,num2);
 }
 int main(){
     int n;
