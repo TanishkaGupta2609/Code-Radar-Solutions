@@ -8,7 +8,7 @@ void frequencyArray(int arr[],int n){
         if(visited[i]==1)continue;
         int count=0;
         for(int j=0;j<n;j++){
-            if(arr[i]=arr[j]){
+            if(arr[i]==arr[j]){
                 count++;
                 visited[j]=1;
             }
