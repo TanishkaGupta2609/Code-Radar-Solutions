@@ -6,7 +6,7 @@ void MinDiffArray(int arr[],int n){
     max_diff=abs(max_diff);
     for(int i=0;i<n;i++){
         for(int j=0;j<i;j++){
-            arr[i]-arr[j]=num;
+            arr[i]-arr[j]==num;
             num=abs(num);
             if(num<max_diff){
                 max_diff=num;
