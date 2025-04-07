@@ -14,11 +14,13 @@ void frequencyArray(int arr[],int n){
         if(i<n-1 && arr[i+1]==arr[i]){
             count++;
         }
-        else{
-            printf("%d %d\n",arr[i],count);
-            count =1;
-        }
+        // else{
+        //     printf("%d %d\n",arr[i],count);
+        //     count =1;
+        // }
     }
+    printf("%d %d\n",arr[i],count);
+    
 }
 int main(){
     int n;
