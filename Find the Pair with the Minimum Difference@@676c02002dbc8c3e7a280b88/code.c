@@ -20,7 +20,6 @@ void MinDiffArray(int arr[],int n){
         if(num<max_diff){
             max_diff=num;
             printf("%d %d",arr[i],arr[i+1]);
-            break;
         }
     }
     
