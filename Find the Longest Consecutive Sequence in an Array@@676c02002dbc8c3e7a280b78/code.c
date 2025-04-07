@@ -9,7 +9,7 @@ void consecutiveArray(int arr[],int n){
             continue;
         }
         else{
-            count=1;
+            count++;
         }
         if(count>max_count){
                 max_count=count;
