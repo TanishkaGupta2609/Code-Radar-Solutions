@@ -1,22 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 void MinDiffArray(int arr[],int n){
-    int num,num1=arr[0],num2=arr[1];
     int max_diff=arr[0]-arr[1];
-    max_diff=abs(max_diff);
-    if(n<2){
-        printf("-1");
+    int num;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n-i-1;j++){
+            if(arr[j]>arr[j+1]){
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
     }
     for(int i=0;i<n;i++){
-        for(int j=0;j<i;j++){
-            num=arr[i]-arr[j];
-            num=abs(num);
-            if(num<max_diff){
-                max_diff=num;
-                num1=arr[i];
-                num2=arr[j];
-                printf("%d %d",num1,num2);
-            }
+        num=abs(arr[i]-arr[i+1]);
+        if(num<max_diff){
+            max_diff=num;
+            printf("%d %d",arr[i],arr[j]);
+            break;
         }
     }
 }
