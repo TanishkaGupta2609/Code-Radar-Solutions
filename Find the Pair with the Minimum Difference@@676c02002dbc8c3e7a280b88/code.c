@@ -2,19 +2,20 @@
 #include <stdlib.h>
 void MinDiffArray(int arr[],int n){
     int num,num1,num2;
-    int diff_num=arr[1]-arr[0];
+    int max_diff=arr[0]-arr[1];
+    max_diff=abs(max_diff);
     for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
-            num=arr[i]-arr[j];
+        for(int j=0;j<i;j++){
+            arr[i]-arr[j]=num;
             num=abs(num);
-            if(num<diff_num){
-                diff_num=num;
-                printf("%d %d",arr[i],arr[j]);
-
+            if(num<max_diff){
+                max_diff=num;
+                num1=arr[i];
+                num2=arr[j];
+                printf("%d %d",num1,num2);
             }
         }
     }
-
 }
 int main(){
     int n;
