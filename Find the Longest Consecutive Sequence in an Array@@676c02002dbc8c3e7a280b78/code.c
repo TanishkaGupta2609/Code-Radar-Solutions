@@ -15,7 +15,7 @@ void consecutiveArray(int arr[],int n){
             count=1;
         }
     }
-    printf("%d",count);
+    printf("%d",max_count);
 }
 int main(){
     int n;
