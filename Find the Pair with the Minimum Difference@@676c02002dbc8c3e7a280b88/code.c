@@ -12,9 +12,10 @@ void MinDiffArray(int arr[],int n){
                 int num1=arr[i];
                 int num2=arr[j];
             }
-            printf("%d %d",num1,num2);
         }
     }
+                printf("%d %d",num1,num2);
+
 }
 int main(){
     int n;
