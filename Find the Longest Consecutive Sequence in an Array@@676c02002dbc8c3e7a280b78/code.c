@@ -5,6 +5,9 @@ void consecutiveArray(int arr[],int n){
         if(arr[i]>arr[i+1] || arr[i]<arr[i+1]){
             count++;
         }
+        else if(arr[i]==arr[i+1]){
+            count=1;
+        }
         else{
             count=1;
         }
