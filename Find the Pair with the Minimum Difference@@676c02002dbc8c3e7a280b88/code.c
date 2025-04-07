@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 void MinDiffArray(int arr[],int n){
+    if(n<2){
+        printf("-1");
+        return;
+    }
     int max_diff=arr[0]-arr[1];
     int num;
     for(int i=0;i<n;i++){
@@ -11,9 +15,6 @@ void MinDiffArray(int arr[],int n){
                 arr[j+1]=temp;
             }
         }
-    }
-    if(n<2){
-        printf("-1");
     }
     for(int i=0;i<n;i++){
         num=abs(arr[i]-arr[i+1]);
