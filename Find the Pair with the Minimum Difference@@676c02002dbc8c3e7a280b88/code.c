@@ -7,7 +7,6 @@ void MinDiffArray(int arr[],int n){
     if(n<2){
         printf("-1");
     }
-    else if{
     for(int i=0;i<n;i++){
         for(int j=0;j<i;j++){
             num=arr[i]-arr[j];
@@ -19,7 +18,6 @@ void MinDiffArray(int arr[],int n){
                 printf("%d %d",num1,num2);
             }
         }
-    }
     }
 }
 int main(){
