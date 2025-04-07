@@ -9,7 +9,7 @@ void MinDiffArray(int arr[],int n){
             num=abs(num);
             if(num<diff_num){
                 diff_num=num;
-            printf("%d %d",arr[i],arr[j]);
+                printf("%d %d",arr[i],arr[j]);
 
             }
         }
