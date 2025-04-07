@@ -5,15 +5,15 @@ void consecutiveArray(int arr[],int n){
         if(arr[i+1]==arr[i]+1){
             count++;
         }
-            if(count>max_count){
-                max_count=count;
-            }
         else if(arr[i]==arr[i+1]){
             continue;
         }
         else{
             count=1;
         }
+        if(count>max_count){
+                max_count=count;
+            }
     }
     printf("%d",max_count);
 }
