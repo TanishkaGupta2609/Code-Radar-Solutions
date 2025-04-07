@@ -8,8 +8,8 @@ void consecutiveArray(int arr[],int n){
         else if(arr[i]==arr[i+1]){
             count=1;
         }
-        else if(arr[i+1]=++arr[i]){
-            count++;;
+        else if(arr[i+1]=arr[i]+1){
+            count++;
         }
     }
     printf("%d",count);
