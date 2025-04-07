@@ -2,7 +2,7 @@
 void consecutiveArray(int arr[],int n){
     int count=0;
     for(int i=0;i<n;i++){
-        else if(arr[i+1]=arr[i]+1){
+        if(arr[i+1]=arr[i]+1){
             count++;
         }
         else if(arr[i]==arr[i+1]){
