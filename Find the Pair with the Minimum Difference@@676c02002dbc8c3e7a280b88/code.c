@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 void MinDiffArray(int arr[],int n){
-    int num,num1,num2;
+    int num,num1=arr[0],num2=arr[1];
     int max_diff=arr[0]-arr[1];
     max_diff=abs(max_diff);
     for(int i=0;i<n;i++){
