@@ -9,7 +9,7 @@ void leaderArray(int arr[],int n){
         if(arr[i]>max_right){
             max_right=arr[i];
             int max_right=arr[n-1];
-            leader[index++]=max_right;
+            leaders[index++]=max_right;
             }
     }
     for(int i=index-1;i>=0;i--){
