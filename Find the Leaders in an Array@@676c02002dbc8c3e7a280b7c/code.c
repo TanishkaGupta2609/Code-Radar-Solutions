@@ -1,5 +1,6 @@
 #include <stdio.h>
 void leaderArray(int arr[],int n){
+    int index=0;
     int leaders[index];
     int max_right=arr[n-1];
     leader[index++]=max_right;
