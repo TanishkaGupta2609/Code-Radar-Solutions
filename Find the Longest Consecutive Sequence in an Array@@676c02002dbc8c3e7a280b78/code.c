@@ -9,6 +9,7 @@ void consecutiveArray(int arr[],int n){
             count++;
         }
     }
+    printf("%d",count);
 }
 int main(){
     int n;
