@@ -12,7 +12,7 @@ void MinDiffArray(int arr[],int n){
                 max_diff=num;
                 num1=arr[i];
                 num2=arr[j];
-                printf("%d %d",num1,num2);
+                printf("%d %d",num2,num1);
             }
         }
     }
