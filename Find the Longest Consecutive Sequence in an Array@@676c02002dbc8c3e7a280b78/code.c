@@ -30,14 +30,15 @@
 
 void consecutiveArray(int arr[], int n) {
     int count = 1, max_count = 1;
+
     for (int i = 0; i < n - 1; i++) {
         if (arr[i + 1] == arr[i] + 1) {
             count++;
-        }
-        else if (arr[i] == arr[i + 1]) {
+        } else if (arr[i + 1] == arr[i]) {
+            // same number, do nothing
             continue;
-        }
-        else {
+        } else {
+            // sequence broken
             count = 1;
         }
 
@@ -45,6 +46,7 @@ void consecutiveArray(int arr[], int n) {
             max_count = count;
         }
     }
+
     printf("%d", max_count);
 }
 
