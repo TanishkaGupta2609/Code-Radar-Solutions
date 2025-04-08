@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<string.h>
-char check_binary(int arr[]){
+char check_binary(char arr[]){
     int n=strlen(arr);
     for(int i=0;i<n;i++){
         if(arr[i]=='1' || arr[i]=='0'){
