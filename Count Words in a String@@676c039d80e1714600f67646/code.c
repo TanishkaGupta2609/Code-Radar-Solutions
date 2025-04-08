@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 void CountWords(char name[]){
-    int count=1;
+    int count=0;
     int n=strlen(name);
     for(int i=0;i<n;i++){
         if(i==0 && name[i]!=' ' ||name[i] == ' ' && name[i+1] != ' ' || name[i]=='\0' )
