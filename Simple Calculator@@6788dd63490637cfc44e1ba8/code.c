@@ -3,8 +3,6 @@
 int main() {
     char operator;
     float num1, num2;
-
-    // Space before %c skips whitespace (like newline)
     scanf("%f %f", &num1, &num2);
     scanf(" %c", &operator);
 
