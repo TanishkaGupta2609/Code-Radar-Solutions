@@ -4,7 +4,7 @@ void CountWords(char name[]){
     int count=1;
     int n=strlen(name);
     for(int i=0;i<n;i++){
-        if(name[i] == ' ' && name[i+1] != ' ' && name[i+1] != '\0')
+        if(name[i] == ' ' && name[i+1] != ' ' )
 {
             count++;
         }
