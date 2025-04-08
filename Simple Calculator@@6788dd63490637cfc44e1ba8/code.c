@@ -20,9 +20,10 @@ int main() {
             printf("%.2f", result);
             break;
         case '/':
-            if(num2 != 0)
+            if(num2 != 0){
                 result = num1 / num2;
                 printf("%.2f", result);
+            }
             else
                 printf("Error: Division by zero");
             break;
