@@ -5,7 +5,7 @@ void Palindromestring(char name[500]){
     for(int i=0;i<n;i++){
         if(name[i]=' ')continue;
     }
-    for(int i=0;i<n\2;i++){
+    for(int i=0;i<n/2;i++){
         if(name[i]==name[n-i-1]){
             ispalindrome=1;
         }
