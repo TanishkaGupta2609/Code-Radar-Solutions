@@ -13,9 +13,9 @@ void replaceChar(char arr[],char k,char t){
 }
 int main(){
     char arr[100];
-    scanf("%s/n",arr);
+    scanf("%s",arr);
     char k;
-    scanf("%c/n",&k);
+    scanf("%c",&k);
     char t;
     scanf("%c",&t);
     replaceChar(arr,k,t);
