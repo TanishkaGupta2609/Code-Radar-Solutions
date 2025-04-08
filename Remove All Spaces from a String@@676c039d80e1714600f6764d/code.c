@@ -12,6 +12,6 @@ void SpaceString(char arr[100]){
 int main(){
     char name[200];
     fgets(name,200,stdin);
-    SpaceString(arr);
+    SpaceString(name);
     return 0;
 }
