@@ -4,7 +4,7 @@ void checkBinary(char name[]){
     int n=strlen(name);
     int Isbinary=1;
     for(int i=0;i<n;i++){
-        if(name[i]!='1' || name[i]!='0'){
+        if(name[i]!='1' && name[i]!='0'){
             Isbinary=0;
         }
     }
