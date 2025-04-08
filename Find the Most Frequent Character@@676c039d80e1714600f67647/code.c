@@ -5,15 +5,15 @@ void frequentCharacter(char name[500]){
     int max_count=1;
     int n=strlen(name);
     for(int i=0;i<n;i++){
-        if(arr[i]==' ')continue;
+        if(name[i]==' ')continue;
         for(int j=0;j<n;j++){
-            if(arr[i]==arr[j]){
+            if(name[i]==name[j]){
                 count++;
             }
         }
         if(count>max_count){
             max_count=count;
-            ch=arr[i];
+            ch=name[i];
         }
     }
     printf("%c",ch);
