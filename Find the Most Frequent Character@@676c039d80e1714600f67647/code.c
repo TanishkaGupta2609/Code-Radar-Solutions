@@ -3,6 +3,7 @@
 void frequentCharacter(char name[500]){
     int count=0;
     int max_count=1;
+    char ch;
     int n=strlen(name);
     for(int i=0;i<n;i++){
         if(name[i]==' ')continue;
