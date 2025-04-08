@@ -15,6 +15,7 @@ void frequentCharacter(char name[500]){
         if(count>max_count){
             max_count=count;
             ch=name[i];
+            break;
         }
     }
     printf("%c",ch);
