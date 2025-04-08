@@ -7,7 +7,6 @@ void frequentCharacter(char name[500]){
     int n=strlen(name);
     for(int i=0;i<n;i++){
         if(name[i]==' ')continue;
-        count=0;
         for(int j=0;j<n;j++){
             if(name[i]==name[j]){
                 count++;
