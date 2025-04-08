@@ -1,24 +1,24 @@
 #include <stdio.h>
 #include<string.h>
-char check_binary(char arr[]){
-    int n=strlen(arr);
+void checkBinary(char name[]){
+    int n=strlen(name);
+    int Isbinary=0;
     for(int i=0;i<n;i++){
-        if(arr[i]!='1' || arr[i]!='0'){
-            return 0;
-
+        if(name[i]=='1' || name[i]=='0'){
+            Isbinary=1;
         }
-         }
-         return 1;
+    }
+    if(Isbinary){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
 }
 int main(){
     char name[200];
     scanf("%s",name);
-    if(check_binary(name)){
-        printf("No");
-    }
-    else{
-        printf("Yes");
-    }
+    checkBinary(name);
 
     return 0;
 }
