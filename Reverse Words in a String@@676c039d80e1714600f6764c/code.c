@@ -13,5 +13,5 @@ int main(){
     char name[200];
     fgets(name,200,stdin);
     ReverseString(name);
-    rerturn 0;
+    return 0;
 }
