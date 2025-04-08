@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<string.h>
-int checvk_binary(int arr[]){
+char check_binary(int arr[]){
     int n=strlen(arr);
     for(int i=0;i<n;i++){
         if(arr[i]=='1' || arr[i]=='0'){
@@ -12,7 +12,7 @@ int checvk_binary(int arr[]){
 int main(){
     char name[200];
     scanf("%c",&name);
-    if(checvk_binary){
+    if(check_binary){
         printf("Yes");
     }
     else{
