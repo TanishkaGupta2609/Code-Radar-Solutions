@@ -4,10 +4,10 @@ int findPalindrome(char arr[]){
     int n=strlen(arr);
     for(int i=0;arr[i]!='\0';i++){
         if(arr[i]=arr[n-i-1]){
-            return 1;
+            return 0;
         }
     }
-    return 0;
+    return 1;
 }
 int main()
 {
@@ -15,10 +15,10 @@ int main()
     scanf("%s",name);
     char s=findPalindrome(name);
     if(s){
-        printf("Yes");
+        printf("No");
     }
     else{
-        printf("No");
+        printf("Yes");
     }
     return 0;
 }
