@@ -1,28 +1,24 @@
 #include <stdio.h>
-#include <string.h>
-void frequentCharacter(char name[500]){
-    int count=0;
-    int max_count=1;
-    char ch;
-    int n=strlen(name);
-    for(int i=0;i<n;i++){
-        if(name[i]==' ')continue;
-        for(int j=0;j<n;j++){
-            if(name[i]==name[j]){
-                count++;
-                break;
-            }
-        }
-        if(count>max_count){
-            max_count=count;
-            ch=name[i];
+
+int main() {
+    char s[1001];
+    int freq[26] = {0};
+    scanf("%s", s);
+
+    for (int i = 0; s[i] != '\0'; i++) {
+        freq[s[i] - 'a']++;
+    }
+
+    int max_freq = 0;
+    char result_char;
+
+    for (int i = 0; i < 26; i++) {
+        if (freq[i] > max_freq) {
+            max_freq = freq[i];
+            result_char = 'a' + i;
         }
     }
-    printf("%c",ch);
-}
-int main(){
-    char name[200];
-    fgets(name,200,stdin);
-    frequentCharacter(name);
+
+    printf("%c\n", result_char);
     return 0;
 }
