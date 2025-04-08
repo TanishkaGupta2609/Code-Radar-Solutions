@@ -15,9 +15,9 @@ int main(){
     char arr[100];
     scanf("%s",arr);
     char k;
-    scanf("%c",&k);
+    scanf(" %c",&k);
     char t;
-    scanf("%c",&t);
+    scanf(" %c",&t);
     replaceChar(arr,k,t);
     return 0;
 }
