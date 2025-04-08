@@ -21,3 +21,5 @@ int main() {
     char ch;
     scanf("%c", &ch);
     checkCharType(ch);
+    return 0;
+}
