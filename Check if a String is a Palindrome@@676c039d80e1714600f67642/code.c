@@ -15,10 +15,10 @@ int main()
     scanf("%s",name);
     char s=findPalindrome(name);
     if(s){
-        printf("No");
+        printf("Yes");
     }
     else{
-        printf("Yes");
+        printf("No");
     }
     return 0;
 }
