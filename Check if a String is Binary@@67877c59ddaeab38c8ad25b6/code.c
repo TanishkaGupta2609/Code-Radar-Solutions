@@ -11,7 +11,7 @@ int checvk_binary(int arr[]){
 }
 int main(){
     char name[200];
-    scanf("%d",&name);
+    scanf("%c",&name);
     if(checvk_binary){
         printf("Yes");
     }
