@@ -7,7 +7,7 @@ void SpaceString(char arr[100]){
         if(arr[i]='\0'){
             continue;
         }
-        printf("%c",arr[j]);
+        printf("%c",arr[i]);
     }
 }
 int main(){
