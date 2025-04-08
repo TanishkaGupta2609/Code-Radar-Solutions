@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <sting.h>
+#include <string.h>
 void PanagramString(char arr[]){
     int arr=arr_int[]
     int flag=0;
