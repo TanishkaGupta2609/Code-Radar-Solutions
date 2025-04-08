@@ -8,7 +8,7 @@ void replaceChar(char arr[],char k,char t){
         }
     }
     for(int i=0;i<n;i++){
-        printf("%s",arr[i]);
+        printf("%c",arr[i]);
     }
 }
 int main(){
