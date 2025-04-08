@@ -2,7 +2,7 @@
 #include <string.h>
 int findPalindrome(char arr[]){
     int n=strlen(arr);
-    for(int i=0;arr[i]!='\0';i++){
+    for(int i=0;arr[i]<n/2;i++){
         if(arr[i]==arr[n-i-1]){
             return 1;
             break;
