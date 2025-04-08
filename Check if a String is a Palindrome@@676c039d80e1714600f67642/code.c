@@ -3,7 +3,7 @@
 int findPalindrome(char arr[]){
     int n=strlen(arr);
     int ispalindrome=1;
-    for(int i=0;arr[i]<n/2;i++){
+    for(int i=0;i<n/2;i++){
         if(arr[i]!=arr[n-i-1]){
             ispalindrome=0;
         }
