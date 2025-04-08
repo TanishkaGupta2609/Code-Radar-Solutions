@@ -6,7 +6,6 @@ void checkBinary(char name[]){
     for(int i=0;i<n;i++){
         if(name[i]!='1' || name[i]!='0'){
             Isbinary=0;
-            break;
         }
     }
     if(Isbinary){
