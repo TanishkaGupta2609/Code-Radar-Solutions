@@ -22,7 +22,7 @@ int main() {
         }
     }
 
-    printf("\nTop Scorer:");
+    printf("Top Scorer:");
     printf("Roll No: %d", s[topIndex].roll);
     printf("Name: %s", s[topIndex].name);
     printf("Marks: %.2f", s[topIndex].marks);
