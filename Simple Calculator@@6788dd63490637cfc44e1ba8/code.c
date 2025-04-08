@@ -5,8 +5,8 @@ int main() {
     float num1, num2;
 
     // Space before %c skips whitespace (like newline)
-    scanf(" %c", &operator);
     scanf("%f %f", &num1, &num2);
+    scanf(" %c", &operator);
 
     if (operator == '+') {
         printf("%.2f", num1 + num2);
