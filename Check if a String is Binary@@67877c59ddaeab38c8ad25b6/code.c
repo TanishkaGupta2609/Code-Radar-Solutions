@@ -14,10 +14,10 @@ int main(){
     char name[200];
     scanf("%s",name);
     if(check_binary(name)){
-        printf("Yes");
+        printf("No");
     }
     else{
-        printf("No");
+        printf("Yes");
     }
 
     return 0;
