@@ -2,33 +2,27 @@
 
 int main() {
     char operator;
-    float num1, num2, result;
+    float num1, num2;
 
-    // Read operator with leading space to ignore leftover newline
-    scanf(" %c", &operator);
-    // Read two float numbers
+    // Fix: Space before %c ignores whitespace like newline
+    scanf(" %c", &operator);         
     scanf("%f %f", &num1, &num2);
 
     switch (operator) {
         case '+':
-            result = num1 + num2;
-            printf("%.2f", result);
+            printf("%.2f", num1 + num2);
             break;
         case '-':
-            result = num1 - num2;
-            printf("%.2f", result);
+            printf("%.2f", num1 - num2);
             break;
         case '*':
-            result = num1 * num2;
-            printf("%.2f", result);
+            printf("%.2f", num1 * num2);
             break;
         case '/':
-            if (num2 != 0) {
-                result = num1 / num2;
-                printf("%.2f", result);
-            } else {
-                printf("Error: Division by zero");
-            }
+            if (num2 != 0)
+                printf("%.2f", num1 / num2);
+            else
+                printf("Division by zero error");
             break;
         default:
             printf("Invalid operator");
