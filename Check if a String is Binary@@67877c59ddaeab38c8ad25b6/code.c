@@ -11,8 +11,8 @@ char check_binary(int arr[]){
 }
 int main(){
     char name[200];
-    scanf("%c",&name);
-    if(check_binary){
+    scanf("%s",name);
+    if(check_binary(name)){
         printf("Yes");
     }
     else{
