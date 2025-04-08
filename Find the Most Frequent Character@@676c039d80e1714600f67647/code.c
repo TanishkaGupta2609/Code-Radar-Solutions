@@ -10,12 +10,12 @@ void frequentCharacter(char name[500]){
         for(int j=0;j<n;j++){
             if(name[i]==name[j]){
                 count++;
+                break;
             }
         }
         if(count>max_count){
             max_count=count;
             ch=name[i];
-            break;
         }
     }
     printf("%c",ch);
