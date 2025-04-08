@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<string.h>
 int checvk_binary(int arr[]){
     int n=strlen(arr);
     for(int i=0;i<n;i++){
