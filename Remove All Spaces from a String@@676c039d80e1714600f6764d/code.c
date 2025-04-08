@@ -8,7 +8,7 @@ void SpaceString(char arr[100]){
             arr[j]=arr[i];
         }
     }
-    printf("%s",arr[j]);
+    printf("%c",arr[j]);
 }
 int main(){
     char name[200];
