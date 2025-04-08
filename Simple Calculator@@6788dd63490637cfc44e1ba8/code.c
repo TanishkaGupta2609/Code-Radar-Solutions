@@ -9,17 +9,17 @@ int main() {
     scanf(" %c", &operator);
 
     if (operator == '+') {
-        printf("%.2f", num1 + num2);
+        printf("%d", num1 + num2);
     }
     else if (operator == '-') {
-        printf("%.2f", num1 - num2);
+        printf("%d", num1 - num2);
     }
     else if (operator == '*') {
-        printf("%.2f", num1 * num2);
+        printf("%d", num1 * num2);
     }
     else if (operator == '/') {
         if (num2 != 0)
-            printf("%.2f", num1 / num2);
+            printf("%d", num1 / num2);
         else
             printf("Division by zero error");
     }
