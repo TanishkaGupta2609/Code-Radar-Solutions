@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 void findPalindrome(char arr[]){
     int n=strlen(arr);
     for(int i=0;arr[i]!='\0';i++){
