@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 void Palindromestring(char name[500]){
+    int n=strlen(name);
     int ispalindrome=0;
     for(int i=0;i<n;i++){
         if(name[i]=' ')continue;
