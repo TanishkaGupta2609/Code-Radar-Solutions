@@ -2,24 +2,24 @@
 #include <string.h>
 int findPalindrome(char arr[]){
     int n=strlen(arr);
+    int ispalindrome=1;
     for(int i=0;arr[i]<n/2;i++){
         if(arr[i]!=arr[n-i-1]){
-            return 0;
-            break;
+            ispalindrome=0;
         }
     }
-    return 1;
-}
-int main()
-{
-    char name[100];
-    scanf("%s",name);
-    char s=findPalindrome(name);
-    if(s){
+    if(ispalindrome){
         printf("Yes");
     }
     else{
         printf("No");
     }
+}
+int main()
+{
+    char name[100];
+    scanf("%s",name);
+    findPalindrome(name);
+    
     return 0;
 }
