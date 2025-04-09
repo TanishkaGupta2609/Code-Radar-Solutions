@@ -1,22 +1,23 @@
 int findOccurrence(int arr[],int n,int target,int mode){
     int num;
-    for(int i=0;i<n-1;i++){
+   if(mode=='F'){
+    for(int i=0;i<n;i++){
         if(arr[i]==target){
-            if(mode=='F'){
-                num=i;
-                break;
-            }
-        }
-        else if(arr[n-i-1]==target){
-            if(mode=='L'){
-                num=n-i-1;
-                break;
-            }
-        }
-        else{
-            num=-1;
+            num=i;
             break;
         }
     }
-    printf("%d",num);
+   }
+   else if(mode=='l'){
+    for(int i=n;i>0;i--){
+        if(arr[i]==target){
+            num=i;
+            break;
+        }
+    }
+   }
+   else{
+    num=-1;
+   }
+   printf("%d",num);
 }
