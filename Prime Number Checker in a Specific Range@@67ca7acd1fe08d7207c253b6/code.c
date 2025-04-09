@@ -1,19 +1,22 @@
-void printPrimesInRange(int a,int b){
-    int count=0;
-    int arr[n];
-    for(int i=a;i<=b;i++){
-        for(int j=2;j<=i;j++){
-            if(i%j!=0);
+int isprime(int num){
+    if(num<=1){
+        return 0;
+    }
+    for(int i=2;i<num;i++){
+        if(num%i==0){
             count++;
-            arr[i++];
         }
     }
     if(count>2){
-        printf("No prime numbers");
+        return 0;
     }
-    else{
-        for(int i=0;i<n;i++){
-            printf("%d",arr[i]);
-        }
+return 1
+}
+void printPrimesInRange(int a,int b){
+    int found=0;
+    for(int i=a;i<=b;i++){
+        if(isprime(i));
+        printf("%d",i);
+        found=1;
     }
 }
