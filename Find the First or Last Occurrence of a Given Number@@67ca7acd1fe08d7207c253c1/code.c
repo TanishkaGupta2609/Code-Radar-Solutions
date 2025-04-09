@@ -8,7 +8,7 @@ int findOccurrence(int arr[],int n,int target,int mode){
         }
     }
    }
-   else if(mode=='l'){
+   else if(mode=='L'){
     for(int i=n;i>0;i--){
         if(arr[i]==target){
             num=i;
