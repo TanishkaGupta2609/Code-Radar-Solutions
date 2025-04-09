@@ -2,10 +2,11 @@
 #include <string.h>
 void DuplicateArray(char name[]){
     int n=strlen(name);
+    char ch='';
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(name[i]==name[j]){
-                name[j]=' ';
+                name[j]=ch;
             }
         }
     }
