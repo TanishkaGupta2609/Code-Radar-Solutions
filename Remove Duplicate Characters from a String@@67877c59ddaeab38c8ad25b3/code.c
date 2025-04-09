@@ -16,6 +16,6 @@ void DuplicateArray(char name[]){
 int main(){
     char name[200];
     fgets(name,200,stdin);
-    DuplicateArray(arr,n);
+    DuplicateArray(name,n);
     return 0;
 }
