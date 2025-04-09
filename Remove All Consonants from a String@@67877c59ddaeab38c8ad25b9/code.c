@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-int ReplaceVowels(char str[],char ch){
+void ReplaceVowels(char str[],char ch){
     for(int i=0;str[i]!='\0';i++){
         if (str[i] == '\n') continue; 
         if(str[i]!='a'&& str[i]!='e'&&str[i]!='i'&&str[i]!='o'&&str[i]!='u'&&
@@ -8,17 +8,12 @@ int ReplaceVowels(char str[],char ch){
             str[i]=ch;
         }
     }
-    return 0; 
+    printf("%s",str);
 }
 int main(){
     char str[100];
     fgets(str,100,stdin);
     char ch=' ';
-    for(int i=0;str[i]!='\0';i++){
-        if(ReplaceVowels(str,ch)){
-            printf("%c",str[i]);
-        }
-    }
-    
+    ReplaceVowels(str,ch);
     return 0;
 }
