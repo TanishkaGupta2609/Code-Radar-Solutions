@@ -11,7 +11,7 @@ int isprime(int num){
     if(count>2){
         return 0;
     }
-return 1
+return 1;
 }
 void printPrimesInRange(int a,int b){
     int found=0;
