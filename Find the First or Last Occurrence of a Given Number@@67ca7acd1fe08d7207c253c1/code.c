@@ -1,4 +1,4 @@
-int findOccurence(int arr[],int n,int target,int mode){
+int findOccurrence(int arr[],int n,int target,int mode){
     for(int i=0;i<n;i++){
         if(arr[i]==target){
             if(mode=='F'){
