@@ -12,7 +12,7 @@ int findOccurrence(int arr[],int n,int target,int mode){
             }
         }
         else{
-            num="-1";
+            num=-1;
         }
     }
     printf("%d",num);
