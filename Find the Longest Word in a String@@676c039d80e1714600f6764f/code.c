@@ -4,7 +4,6 @@
 
 int main() {
     char str[1000];
-    printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
     int maxLen = 0, len = 0, start = 0, maxStart = 0;
@@ -24,7 +23,6 @@ int main() {
         if (str[i] == '\0') break;
     }
 
-    printf("Longest word: ");
     for (int i = maxStart; i < maxStart + maxLen; i++) {
         printf("%c", str[i]);
     }
