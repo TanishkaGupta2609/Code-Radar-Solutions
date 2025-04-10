@@ -1,22 +1,49 @@
+// #include <stdio.h>
+// #include <string.h>
+// void DuplicateArray(char name[]){
+//     int n=strlen(name);
+//     char ch=' ';
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<n;j++){
+//             if(name[i]==name[j]){
+//                 name[j]=ch;
+//             }
+//         }
+//     }
+//     for(int i=0;i<n;i++){
+//         printf("%c",name[i]);
+//     }
+// }
+// int main(){
+//     char name[200];
+//     fgets(name,200,stdin);
+//     DuplicateArray(name);
+//     return 0;
+// }
 #include <stdio.h>
 #include <string.h>
-void DuplicateArray(char name[]){
-    int n=strlen(name);
-    char ch=' ';
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            if(name[i]==name[j]){
-                name[j]=ch;
+
+void DuplicateArray(char name[]) {
+    int n = strlen(name);
+    for (int i = 0; i < n; i++) {
+        if (name[i] == ' ' || name[i] == '\n') continue; // skip already removed
+        for (int j = i + 1; j < n; j++) {
+            if (name[i] == name[j]) {
+                name[j] = ' '; // replace duplicate with space
             }
         }
     }
-    for(int i=0;i<n;i++){
-        printf("%c",name[i]);
+
+    for (int i = 0; i < n; i++) {
+        if (name[i] != ' ' && name[i] != '\n') {
+            printf("%c", name[i]);
+        }
     }
 }
-int main(){
+
+int main() {
     char name[200];
-    fgets(name,200,stdin);
+    fgets(name, 200, stdin);
     DuplicateArray(name);
     return 0;
 }
