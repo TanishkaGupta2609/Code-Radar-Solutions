@@ -10,9 +10,7 @@ void ReverseString(char name[200]){
         continue;
     }
     }
-    for(int i=0;i<n;i++){
-        printf("%c",name[i]);
-    }
+    printf("%s",name[]);
 }
 int main(){
     char name[200];
