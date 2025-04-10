@@ -2,17 +2,13 @@
 #include <string.h>
 void ReverseString(char name[200]){
     int n=strlen(name);
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n/2;i++){
+        int temp=name[i];
         name[i]=name[n-i-1];
-        if(name[i]==' '){
-            continue;
-        }
-    }
-    for(int i=n;i>0;i--){
         name[n-i-1]=name[i];
-        if(name[n-1-i]==' '){
-            continue;
-        }
+    }
+    else if(name[i]==' '){
+        continue;
     }
     for(int i=0;i<n;i++){
         printf("%c",name[i]);
