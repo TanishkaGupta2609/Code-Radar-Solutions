@@ -6,9 +6,9 @@ void ReverseString(char name[200]){
         int temp=name[i];
         name[i]=name[n-i-1];
         name[n-i-1]=name[i];
-    }
-    if(name[i]==' '){
+        if(name[i]==' '){
         continue;
+    }
     }
     for(int i=0;i<n;i++){
         printf("%c",name[i]);
