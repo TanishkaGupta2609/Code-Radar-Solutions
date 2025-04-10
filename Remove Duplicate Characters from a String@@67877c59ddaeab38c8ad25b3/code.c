@@ -25,16 +25,16 @@
 
 void DuplicateArray(char name[]) {
     int n = strlen(name);
-
-    // Clean newline character from fgets
+    
+    // Remove newline character if it's present from fgets
     if (name[n - 1] == '\n') {
         name[n - 1] = '\0';
         n--;
     }
 
-    // Iterate through the string
+    // Iterate through the string to mark duplicates
     for (int i = 0; i < n; i++) {
-        if (name[i] == ' ') continue;  // Skip spaces
+        if (name[i] == ' ') continue;  // Skip spaces while checking for duplicates
 
         // Compare with subsequent characters to find duplicates
         for (int j = i + 1; j < n; j++) {
@@ -44,10 +44,13 @@ void DuplicateArray(char name[]) {
         }
     }
 
-    // Print the modified string without the spaces (except between words)
+    // Print the modified string, preserving spaces between words
     for (int i = 0; i < n; i++) {
         if (name[i] != ' ') {
-            printf("%c", name[i]);
+            printf("%c", name[i]);  // Print all non-space characters
+        } else if (i > 0 && name[i - 1] != ' ') {
+            // Print space only if it's not at the beginning and the previous character is not a space
+            printf(" ");
         }
     }
 }
