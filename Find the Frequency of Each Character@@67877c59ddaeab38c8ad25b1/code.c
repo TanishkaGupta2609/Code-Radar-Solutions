@@ -16,10 +16,10 @@ int main() {
     }
 
     // Display frequency
-    printf("Character frequencies:\n");
+    
     for (int i = 0; i < 256; i++) {
         if (freq[i] > 0) {
-            printf("'%c' = %d\n", i, freq[i]);
+            printf("%c = %d\n", i, freq[i]);
         }
     }
 
