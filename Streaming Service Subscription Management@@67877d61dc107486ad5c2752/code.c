@@ -9,7 +9,6 @@ struct Subscription {
 
 int main() {
     int n;
-    printf("Enter the number of users: ");
     scanf("%d", &n);
 
     struct Subscription subscriptions[n];
@@ -17,12 +16,11 @@ int main() {
     int count_basic = 0, count_standard = 0, count_premium = 0;
 
     for (int i = 0; i < n; i++) {
-        printf("Enter details for user %d:\n", i + 1);
-        printf("Username: ");
+        printf("%d", i + 1);
         scanf("%s", subscriptions[i].username);
-        printf("Subscription type (Basic/Standard/Premium): ");
+       
         scanf("%s", subscriptions[i].subscription_type);
-        printf("Subscription cost: ");
+       
         scanf("%f", &subscriptions[i].subscription_cost);
 
         // Calculate revenue and count users based on subscription type
@@ -39,7 +37,6 @@ int main() {
     }
 
     // Display results
-    printf("\nTotal Revenue:\n");
     printf("Basic: $%.2f from %d users\n", total_basic, count_basic);
     printf("Standard: $%.2f from %d users\n", total_standard, count_standard);
     printf("Premium: $%.2f from %d users\n", total_premium, count_premium);
