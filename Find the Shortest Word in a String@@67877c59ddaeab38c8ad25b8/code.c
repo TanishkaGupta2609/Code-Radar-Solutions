@@ -4,7 +4,7 @@
 
 int main() {
     char str[1000];
-    printf("Enter a string: ");
+
     fgets(str, sizeof(str), stdin);
 
     int minLen = INT_MAX, len = 0, start = 0, minStart = 0;
@@ -24,7 +24,7 @@ int main() {
         if (str[i] == '\0') break;
     }
 
-    printf("Shortest word: ");
+
     for (int i = minStart; i < minStart + minLen; i++) {
         printf("%c", str[i]);
     }
