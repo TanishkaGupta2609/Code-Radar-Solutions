@@ -23,41 +23,28 @@
 #include <stdio.h>
 #include <string.h>
 
-void DuplicateArray(char name[]) {
-    int n = strlen(name);
-    
-    // Remove newline character if it's present from fgets
-    if (name[n - 1] == '\n') {
-        name[n - 1] = '\0';
-        n--;
-    }
+void removeDuplicates(char str[]) {
+    int n = strlen(str);
+    int hash[256] = {0};  // Boolean array to track character appearances
 
-    // Iterate through the string to mark duplicates
+    int index = 0;  // To track where to store characters in the new string
     for (int i = 0; i < n; i++) {
-        if (name[i] == ' ') continue;  // Skip spaces while checking for duplicates
-
-        // Compare with subsequent characters to find duplicates
-        for (int j = i + 1; j < n; j++) {
-            if (name[i] == name[j]) {
-                name[j] = ' ';  // Replace duplicates with space
-            }
+        // If character is not in the hash (i.e., not seen before), add it
+        if (hash[str[i]] == 0) {
+            str[index++] = str[i];
+            hash[str[i]] = 1;  // Mark this character as seen
         }
     }
 
-    // Print the modified string, preserving spaces between words
-    for (int i = 0; i < n; i++) {
-        if (name[i] != ' ') {
-            printf("%c", name[i]);  // Print all non-space characters
-        } else if (i > 0 && name[i - 1] != ' ') {
-            // Print space only if it's not at the beginning and the previous character is not a space
-            printf(" ");
-        }
-    }
+    str[index] = '\0';  // Null-terminate the string
 }
 
 int main() {
-    char name[200];
-    fgets(name, 200, stdin);
-    DuplicateArray(name);
+    char str[200];
+    fgets(str, sizeof(str), stdin);  // Read input
+
+    removeDuplicates(str);  // Remove duplicates from the string
+    printf("Result: %s\n", str);  // Output the modified string
+
     return 0;
 }
