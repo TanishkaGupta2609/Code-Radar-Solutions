@@ -13,9 +13,9 @@ int main() {
     sub[strcspn(sub, "\n")] = '\0';
 
     if (strstr(str, sub) != NULL) {
-        printf("%s", sub);
+        printf("Yes");
     } else {
-        printf("%s", sub);
+        printf("No");
     }
 
     return 0;
