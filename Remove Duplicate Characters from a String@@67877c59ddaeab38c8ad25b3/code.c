@@ -6,14 +6,14 @@ void DuplicateArray(char name[]){
     int index=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
-            if(hash[str[i]]==0){
+            if(hash[name[i]]==0){
                 str[index++]=str[i];
-                hash[str[i]]=1;
+                hash[name[i]]=1;
             }
 
         }
     }
-    str[index]='\0';
+    name[index]='\0';
     for(int i=0;i<n;i++){
         printf("%c",name[i]);
     }
