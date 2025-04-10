@@ -5,7 +5,7 @@ void ReverseString(char name[200]){
     for(int i=0;i<n/2;i++){
         int temp=name[i];
         name[i]=name[n-i-1];
-        name[n-i-1]=name[i];
+        name[n-i-1]=temp;
         if(name[i]==' '){
         continue;
     }
