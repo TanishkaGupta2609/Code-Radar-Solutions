@@ -7,7 +7,7 @@ void DuplicateArray(char name[]){
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(hash[name[i]]==0){
-                str[index++]=str[i];
+                name[index++]=name[i];
                 hash[name[i]]=1;
             }
 
