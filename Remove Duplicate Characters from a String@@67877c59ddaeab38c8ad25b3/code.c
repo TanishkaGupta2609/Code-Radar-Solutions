@@ -12,9 +12,10 @@ void DuplicateArray(char name[]){
 
         }
     name[index]='\0';
-    for(int i=0;i<n;i++){
-        printf("%c",name[i]);
-    }
+    // for(int i=0;i<n;i++){
+    //     printf("%c",name[i]);
+    // }
+    printf("%s",name);
 }
 int main(){
     char name[200];
