@@ -14,7 +14,6 @@ void reverseWord(char *start, char *end) {
 
 int main() {
     char str[1000];
-    printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
     int len = strlen(str);
@@ -35,7 +34,7 @@ int main() {
         ptr++;
     }
 
-    printf("Result: %s\n", str);
+    printf("%s\n", str);
 
     return 0;
 }
