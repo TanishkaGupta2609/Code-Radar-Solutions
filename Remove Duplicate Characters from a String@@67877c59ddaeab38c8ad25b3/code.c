@@ -44,7 +44,6 @@ int main() {
     fgets(str, sizeof(str), stdin);  // Read input
 
     removeDuplicates(str);  // Remove duplicates from the string
-    printf("Result: %s\n", str);  // Output the modified string
-
+    printf("%s", str);  // Output the modified string
     return 0;
 }
