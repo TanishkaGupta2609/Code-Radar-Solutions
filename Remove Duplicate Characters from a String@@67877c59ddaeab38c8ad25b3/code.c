@@ -25,17 +25,25 @@
 
 void DuplicateArray(char name[]) {
     int n = strlen(name);
+
+    // Clean newline character from fgets
+    if (name[n - 1] == '\n') {
+        name[n - 1] = '\0';
+        n--;
+    }
+
     for (int i = 0; i < n; i++) {
-        if (name[i] == ' ' || name[i] == '\n') continue; // skip already removed
+        if (name[i] == ' ') continue; // Keep space
         for (int j = i + 1; j < n; j++) {
             if (name[i] == name[j]) {
-                name[j] = ' '; // replace duplicate with space
+                name[j] = ' '; // Replace duplicates (after first occurrence) with space
             }
         }
     }
 
+    // Print only first occurrences + spaces
     for (int i = 0; i < n; i++) {
-        if (name[i] != ' ' && name[i] != '\n') {
+        if (name[i] != ' ') {
             printf("%c", name[i]);
         }
     }
