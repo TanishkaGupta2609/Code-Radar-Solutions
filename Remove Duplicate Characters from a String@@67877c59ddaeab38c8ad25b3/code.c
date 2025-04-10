@@ -32,16 +32,19 @@ void DuplicateArray(char name[]) {
         n--;
     }
 
+    // Iterate through the string
     for (int i = 0; i < n; i++) {
-        if (name[i] == ' ') continue; // Keep space
+        if (name[i] == ' ') continue;  // Skip spaces
+
+        // Compare with subsequent characters to find duplicates
         for (int j = i + 1; j < n; j++) {
             if (name[i] == name[j]) {
-                name[j] = ' '; // Replace duplicates (after first occurrence) with space
+                name[j] = ' ';  // Replace duplicates with space
             }
         }
     }
 
-    // Print only first occurrences + spaces
+    // Print the modified string without the spaces (except between words)
     for (int i = 0; i < n; i++) {
         if (name[i] != ' ') {
             printf("%c", name[i]);
