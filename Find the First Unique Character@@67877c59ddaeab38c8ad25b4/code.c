@@ -20,6 +20,6 @@ int main() {
         }
     }
 
-    printf("No unique character found.\n");
+    printf("-");
     return 0;
 }
