@@ -8,6 +8,12 @@ void ReverseString(char name[200]){
             continue;
         }
     }
+    for(int i=n;i>0;i--){
+        name[n-i-1]=name[i];
+        if(name[n-1-i]==' '){
+            continue;
+        }
+    }
     for(int i=0;i<n;i++){
         printf("%c",name[i]);
     }
